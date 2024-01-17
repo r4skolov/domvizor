@@ -1,0 +1,1666 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Домвизор</title>
+	<link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+	<link rel="stylesheet" href="css/app.css">
+	<script>/*! @formatter:off modernizr 3.6.0 (Custom Build) | MIT https://modernizr.com/download/?-overflowscrolling-webp-setclasses !*/!function(e,n,t){function r(e,n){return typeof e===n}function o(){var e,n,t,o,i,s,a;for(var l in _)if(_.hasOwnProperty(l)){if(e=[],n=_[l],n.name&&(e.push(n.name.toLowerCase()),n.options&&n.options.aliases&&n.options.aliases.length))for(t=0;t<n.options.aliases.length;t++)e.push(n.options.aliases[t].toLowerCase());for(o=r(n.fn,"function")?n.fn():n.fn,i=0;i<e.length;i++)s=e[i],a=s.split("."),1===a.length?Modernizr[a[0]]=o:(!Modernizr[a[0]]||Modernizr[a[0]]instanceof Boolean||(Modernizr[a[0]]=new Boolean(Modernizr[a[0]])),Modernizr[a[0]][a[1]]=o),w.push((o?"":"no-")+a.join("-"))}}function i(e){var n=S.className,t=Modernizr._config.classPrefix||"";if(B&&(n=n.baseVal),Modernizr._config.enableJSClass){var r=new RegExp("(^|\\s)"+t+"no-js(\\s|$)");n=n.replace(r,"$1"+t+"js$2")}Modernizr._config.enableClasses&&(n+=" "+t+e.join(" "+t),B?S.className.baseVal=n:S.className=n)}function s(e,n){if("object"==typeof e)for(var t in e)b(e,t)&&s(t,e[t]);else{e=e.toLowerCase();var r=e.split("."),o=Modernizr[r[0]];if(2==r.length&&(o=o[r[1]]),"undefined"!=typeof o)return Modernizr;n="function"==typeof n?n():n,1==r.length?Modernizr[r[0]]=n:(!Modernizr[r[0]]||Modernizr[r[0]]instanceof Boolean||(Modernizr[r[0]]=new Boolean(Modernizr[r[0]])),Modernizr[r[0]][r[1]]=n),i([(n&&0!=n?"":"no-")+r.join("-")]),Modernizr._trigger(e,n)}return Modernizr}function a(e,n){return!!~(""+e).indexOf(n)}function l(){return"function"!=typeof n.createElement?n.createElement(arguments[0]):B?n.createElementNS.call(n,"http://www.w3.org/2000/svg",arguments[0]):n.createElement.apply(n,arguments)}function A(e){return e.replace(/([a-z])-([a-z])/g,function(e,n,t){return n+t.toUpperCase()}).replace(/^-/,"")}function u(e,n){return function(){return e.apply(n,arguments)}}function f(e,n,t){var o;for(var i in e)if(e[i]in n)return t===!1?e[i]:(o=n[e[i]],r(o,"function")?u(o,t||n):o);return!1}function c(n,t,r){var o;if("getComputedStyle"in e){o=getComputedStyle.call(e,n,t);var i=e.console;if(null!==o)r&&(o=o.getPropertyValue(r));else if(i){var s=i.error?"error":"log";i[s].call(i,"getComputedStyle returning null, its possible modernizr test results are inaccurate")}}else o=!t&&n.currentStyle&&n.currentStyle[r];return o}function p(e){return e.replace(/([A-Z])/g,function(e,n){return"-"+n.toLowerCase()}).replace(/^ms-/,"-ms-")}function d(){var e=n.body;return e||(e=l(B?"svg":"body"),e.fake=!0),e}function m(e,t,r,o){var i,s,a,A,u="modernizr",f=l("div"),c=d();if(parseInt(r,10))for(;r--;)a=l("div"),a.id=o?o[r]:u+(r+1),f.appendChild(a);return i=l("style"),i.type="text/css",i.id="s"+u,(c.fake?c:f).appendChild(i),c.appendChild(f),i.styleSheet?i.styleSheet.cssText=e:i.appendChild(n.createTextNode(e)),f.id=u,c.fake&&(c.style.background="",c.style.overflow="hidden",A=S.style.overflow,S.style.overflow="hidden",S.appendChild(c)),s=t(f,e),c.fake?(c.parentNode.removeChild(c),S.style.overflow=A,S.offsetHeight):f.parentNode.removeChild(f),!!s}function g(n,r){var o=n.length;if("CSS"in e&&"supports"in e.CSS){for(;o--;)if(e.CSS.supports(p(n[o]),r))return!0;return!1}if("CSSSupportsRule"in e){for(var i=[];o--;)i.push("("+p(n[o])+":"+r+")");return i=i.join(" or "),m("@supports ("+i+") { #modernizr { position: absolute; } }",function(e){return"absolute"==c(e,null,"position")})}return t}function h(e,n,o,i){function s(){f&&(delete U.style,delete U.modElem)}if(i=r(i,"undefined")?!1:i,!r(o,"undefined")){var u=g(e,o);if(!r(u,"undefined"))return u}for(var f,c,p,d,m,h=["modernizr","tspan","samp"];!U.style&&h.length;)f=!0,U.modElem=l(h.shift()),U.style=U.modElem.style;for(p=e.length,c=0;p>c;c++)if(d=e[c],m=U.style[d],a(d,"-")&&(d=A(d)),U.style[d]!==t){if(i||r(o,"undefined"))return s(),"pfx"==n?d:!0;try{U.style[d]=o}catch(v){}if(U.style[d]!=m)return s(),"pfx"==n?d:!0}return s(),!1}function v(e,n,t,o,i){var s=e.charAt(0).toUpperCase()+e.slice(1),a=(e+" "+x.join(s+" ")+s).split(" ");return r(n,"string")||r(n,"undefined")?h(a,n,o,i):(a=(e+" "+E.join(s+" ")+s).split(" "),f(a,n,t))}function y(e,n,r){return v(e,t,t,n,r)}var w=[],_=[],C={_version:"3.6.0",_config:{classPrefix:"",enableClasses:!0,enableJSClass:!0,usePrefixes:!0},_q:[],on:function(e,n){var t=this;setTimeout(function(){n(t[e])},0)},addTest:function(e,n,t){_.push({name:e,fn:n,options:t})},addAsyncTest:function(e){_.push({name:null,fn:e})}},Modernizr=function(){};Modernizr.prototype=C,Modernizr=new Modernizr;var b,S=n.documentElement,B="svg"===S.nodeName.toLowerCase();!function(){var e={}.hasOwnProperty;b=r(e,"undefined")||r(e.call,"undefined")?function(e,n){return n in e&&r(e.constructor.prototype[n],"undefined")}:function(n,t){return e.call(n,t)}}(),C._l={},C.on=function(e,n){this._l[e]||(this._l[e]=[]),this._l[e].push(n),Modernizr.hasOwnProperty(e)&&setTimeout(function(){Modernizr._trigger(e,Modernizr[e])},0)},C._trigger=function(e,n){if(this._l[e]){var t=this._l[e];setTimeout(function(){var e,r;for(e=0;e<t.length;e++)(r=t[e])(n)},0),delete this._l[e]}},Modernizr._q.push(function(){C.addTest=s}),Modernizr.addAsyncTest(function(){function e(e,n,t){function r(n){var r=n&&"load"===n.type?1==o.width:!1,i="webp"===e;s(e,i&&r?new Boolean(r):r),t&&t(n)}var o=new Image;o.onerror=r,o.onload=r,o.src=n}var n=[{uri:"data:image/webp;base64,UklGRiQAAABXRUJQVlA4IBgAAAAwAQCdASoBAAEAAwA0JaQAA3AA/vuUAAA=",name:"webp"},{uri:"data:image/webp;base64,UklGRkoAAABXRUJQVlA4WAoAAAAQAAAAAAAAAAAAQUxQSAwAAAABBxAR/Q9ERP8DAABWUDggGAAAADABAJ0BKgEAAQADADQlpAADcAD++/1QAA==",name:"webp.alpha"},{uri:"data:image/webp;base64,UklGRlIAAABXRUJQVlA4WAoAAAASAAAAAAAAAAAAQU5JTQYAAAD/////AABBTk1GJgAAAAAAAAAAAAAAAAAAAGQAAABWUDhMDQAAAC8AAAAQBxAREYiI/gcA",name:"webp.animation"},{uri:"data:image/webp;base64,UklGRh4AAABXRUJQVlA4TBEAAAAvAAAAAAfQ//73v/+BiOh/AAA=",name:"webp.lossless"}],t=n.shift();e(t.name,t.uri,function(t){if(t&&"load"===t.type)for(var r=0;r<n.length;r++)e(n[r].name,n[r].uri)})});var Q="Moz O ms Webkit",x=C._config.usePrefixes?Q.split(" "):[];C._cssomPrefixes=x;var E=C._config.usePrefixes?Q.toLowerCase().split(" "):[];C._domPrefixes=E;var T={elem:l("modernizr")};Modernizr._q.push(function(){delete T.elem});var U={style:T.elem.style};Modernizr._q.unshift(function(){delete U.style}),C.testAllProps=v,C.testAllProps=y,Modernizr.addTest("overflowscrolling",y("overflowScrolling","touch",!0)),o(),i(w),delete C.addTest,delete C.addAsyncTest;for(var P=0;P<Modernizr._q.length;P++)Modernizr._q[P]();e.Modernizr=Modernizr}(window,document);/*! @formatter:on */</script>
+</head>
+
+<body class="body body--loader" data-magic-cursor="body">
+	<div class="magic-cursor" data-magic-cursor="main">
+		<div class="magic-cursor__inner" data-magic-cursor="inner"></div>
+	</div>
+	<div class="loader">
+		<div class="loader__line"></div>
+		<div class="loader__status"></div>
+	</div>
+	<div class="page-wrapper">
+		<div class="container container--main">
+			<!--Header-->
+			<header id="header" class="header">
+				<div class="header__wrapper">
+					<!--Logo-->
+					<div class="header__logo">
+						<a href="index.html" class="logo">
+							<img src="images/icon/logo.svg" alt="Домвизор" width="73" height="73">
+						</a>
+					</div>
+					<div class="header__panel" data-menu>
+						<div class="header__menu">
+							<nav class="nav">
+								<ul class="nav__list">
+									<li class="nav__item">
+										<a class="nav__link js-smooth-scroll" href="#services">
+											<span>Услуги</span>
+										</a>
+									</li>
+									<li class="nav__item">
+										<a class="nav__link js-smooth-scroll" href="#housing">
+											<span>ЖК</span>
+										</a>
+									</li>
+									<li class="nav__item">
+										<a class="nav__link js-smooth-scroll" href="#stages">
+											<span>Этапы</span>
+										</a>
+									</li>
+									<li class="nav__item">
+										<a class="nav__link js-smooth-scroll" href="#about">
+											<span>О компании</span>
+										</a>
+									</li>
+								</ul>
+							</nav>
+							<div class="header__mobile">
+								<a href="#" class="b-btn b-btn--primary">
+									Получить консультацию
+								</a>
+								<div class="header__contacts">
+									<div class="contact-name">
+										Телефон
+									</div>
+									<a href="tel:+78767654545">+7 (876) 765-45-45</a>
+								</div>
+								<div class="header__contacts">
+									<div class="contact-name">
+										Соцсети
+									</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+									<div class="s-block s-block--mobile">
+										<a href="https://api.whatsapp.com/send?phone=78123335515" class="s-block__link" target="_blank" rel="noopener nofollow">
+											<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<circle opacity="0.2" cx="16" cy="16" r="16" fill="white" />
+												<path d="M16.0007 9.33325C19.6827 9.33325 22.6673 12.3179 22.6673 15.9999C22.6673 19.6819 19.6827 22.6666 16.0007 22.6666C14.8225 22.6685 13.6651 22.3567 12.6473 21.7633L9.33666 22.6666L10.238 19.3546C9.64406 18.3365 9.33203 17.1786 9.33399 15.9999C9.33399 12.3179 12.3187 9.33325 16.0007 9.33325ZM13.7287 12.8666L13.5953 12.8719C13.509 12.8772 13.4246 12.8999 13.3473 12.9386C13.275 12.9795 13.209 13.0307 13.1513 13.0906C13.0713 13.1659 13.026 13.2313 12.9773 13.2946C12.7307 13.6152 12.598 14.0088 12.6 14.4133C12.6013 14.7399 12.6867 15.0579 12.82 15.3553C13.0927 15.9566 13.5413 16.5933 14.1333 17.1833C14.276 17.3253 14.416 17.4679 14.5667 17.6006C15.3023 18.2482 16.1788 18.7153 17.1267 18.9646L17.5053 19.0226C17.6287 19.0293 17.752 19.0199 17.876 19.0139C18.0702 19.0039 18.2597 18.9513 18.4313 18.8599C18.5186 18.8149 18.6038 18.766 18.6867 18.7133C18.6867 18.7133 18.7153 18.6946 18.77 18.6533C18.86 18.5866 18.9153 18.5393 18.99 18.4613C19.0453 18.4039 19.0933 18.3366 19.13 18.2599C19.182 18.1513 19.234 17.9439 19.2553 17.7713C19.2713 17.6393 19.2667 17.5673 19.2647 17.5226C19.262 17.4513 19.2027 17.3773 19.138 17.3459L18.75 17.1719C18.75 17.1719 18.17 16.9193 17.8153 16.7579C17.7782 16.7417 17.7384 16.7324 17.698 16.7306C17.6524 16.7259 17.6063 16.731 17.5628 16.7456C17.5194 16.7602 17.4795 16.784 17.446 16.8153C17.4427 16.8139 17.398 16.8519 16.916 17.4359C16.8883 17.4731 16.8502 17.5012 16.8065 17.5166C16.7628 17.5321 16.7155 17.5341 16.6707 17.5226C16.6272 17.5109 16.5847 17.4962 16.5433 17.4786C16.4607 17.4439 16.432 17.4306 16.3753 17.4066C15.9927 17.2396 15.6385 17.014 15.3253 16.7379C15.2413 16.6646 15.1633 16.5846 15.0833 16.5073C14.8211 16.2561 14.5925 15.9719 14.4033 15.6619L14.364 15.5986C14.3357 15.556 14.3129 15.5101 14.296 15.4619C14.2707 15.3639 14.3367 15.2853 14.3367 15.2853C14.3367 15.2853 14.4987 15.1079 14.574 15.0119C14.6473 14.9186 14.7093 14.8279 14.7493 14.7633C14.828 14.6366 14.8527 14.5066 14.8113 14.4059C14.6247 13.9499 14.4313 13.4959 14.2327 13.0453C14.1933 12.9559 14.0767 12.8919 13.9707 12.8793C13.9347 12.8753 13.8987 12.8713 13.8627 12.8686C13.7731 12.8641 13.6834 12.865 13.594 12.8713L13.728 12.8659L13.7287 12.8666Z" fill="white" />
+											</svg>
+										</a>
+										<a href="https://t.me/dom_vizor" class="s-block__link" target="_blank" rel="noopener nofollow">
+											<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<circle opacity="0.2" cx="16" cy="16" r="16" fill="white" />
+												<g>
+													<path fill-rule="evenodd" clip-rule="evenodd" d="M21.1846 10.9533C21.3493 10.884 21.5297 10.8601 21.7068 10.8841C21.8839 10.9081 22.0514 10.9791 22.1917 11.0898C22.3321 11.2004 22.4402 11.3467 22.5048 11.5134C22.5695 11.68 22.5883 11.8609 22.5593 12.0373L21.0473 21.2086C20.9006 22.0933 19.9299 22.6006 19.1186 22.16C18.4399 21.7913 17.4319 21.2233 16.5253 20.6306C16.0719 20.334 14.6833 19.384 14.8539 18.708C15.0006 18.13 17.3339 15.958 18.6673 14.6666C19.1906 14.1593 18.9519 13.8666 18.3339 14.3333C16.7986 15.492 14.3353 17.254 13.5206 17.75C12.8019 18.1873 12.4273 18.262 11.9793 18.1873C11.1619 18.0513 10.4039 17.8406 9.78527 17.584C8.94927 17.2373 8.98993 16.088 9.7846 15.7533L21.1846 10.9533Z" fill="white" />
+												</g>
+												<defs>
+													<clipPath>
+														<rect width="16" height="16" fill="white" transform="translate(8 8)" />
+													</clipPath>
+												</defs>
+											</svg>
+										</a>
+										<a href="https://vk.com/domvizor" class="s-block__link" target="_blank" rel="noopener nofollow">
+											<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<circle opacity="0.2" cx="16" cy="16" r="16" fill="white" />
+												<path d="M23.9192 21.3175H22.0183C21.2992 21.3175 21.0825 20.735 19.7933 19.445C18.6667 18.3591 18.1908 18.2241 17.9058 18.2241C17.5117 18.2241 17.4042 18.3325 17.4042 18.875V20.585C17.4042 21.0475 17.2542 21.3183 16.0458 21.3183C14.8736 21.2395 13.7368 20.8834 12.7291 20.2792C11.7215 19.6751 10.8718 18.8402 10.25 17.8433C8.77366 16.0058 7.74642 13.8492 7.25 11.545C7.25 11.26 7.35833 11.0016 7.90167 11.0016H9.80167C10.29 11.0016 10.4658 11.2191 10.6575 11.7216C11.58 14.4366 13.1542 16.7983 13.7933 16.7983C14.0383 16.7983 14.145 16.69 14.145 16.0791V13.2825C14.0642 12.0066 13.3867 11.8991 13.3867 11.4375C13.3952 11.3157 13.451 11.202 13.542 11.1206C13.633 11.0392 13.7522 10.9965 13.8742 11.0016H16.8608C17.2692 11.0016 17.4042 11.205 17.4042 11.6933V15.4683C17.4042 15.8758 17.5792 16.0108 17.7025 16.0108C17.9475 16.0108 18.1358 15.8758 18.585 15.4275C19.5478 14.2533 20.3344 12.9451 20.92 11.5441C20.9799 11.3759 21.0933 11.2319 21.2427 11.1341C21.3921 11.0363 21.5694 10.9901 21.7475 11.0025H23.6483C24.2183 11.0025 24.3392 11.2875 24.2183 11.6941C23.527 13.2428 22.6715 14.7129 21.6667 16.0791C21.4617 16.3916 21.38 16.5541 21.6667 16.9208C21.855 17.2058 22.5217 17.7625 22.9692 18.2916C23.6208 18.9416 24.1617 19.6933 24.5708 20.5166C24.7342 21.0466 24.4617 21.3175 23.9192 21.3175Z" fill="white" />
+											</svg>
+										</a>
+										<a href="https://ok.ru/domvizor" class="s-block__link" target="_blank" rel="noopener nofollow">
+											<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<circle opacity="0.2" cx="16" cy="16" r="16" fill="white" />
+												<g>
+													<path d="M15.7063 8C13.3937 8 11.5124 9.85234 11.5124 12.1295C11.5124 14.4065 13.3937 16.258 15.7063 16.258C18.0188 16.258 19.8992 14.4065 19.8992 12.1295C19.8992 9.85234 18.0189 8 15.7063 8ZM15.7063 10.4195C16.6634 10.4195 17.4418 11.187 17.4418 12.1295C17.4418 13.0716 16.6635 13.8385 15.7063 13.8385C14.749 13.8385 13.9699 13.0716 13.9699 12.1295C13.9699 11.187 14.749 10.4195 15.7063 10.4195ZM12.2486 16.3985C11.8337 16.3921 11.4257 16.5936 11.189 16.965C10.8273 17.5309 11.0006 18.2776 11.5739 18.6335C12.3322 19.102 13.1551 19.4344 14.0085 19.626L11.6648 21.935C11.185 22.4077 11.1854 23.1733 11.6653 23.646C11.9058 23.8819 12.2195 24 12.534 24C12.8482 24 13.1629 23.8817 13.4027 23.6455L15.7053 21.377L18.0099 23.6455C18.4893 24.1181 19.2667 24.1181 19.7469 23.6455C20.2269 23.1731 20.2269 22.4067 19.7469 21.935L17.4022 19.6265C18.2558 19.4349 19.0789 19.1023 19.8368 18.6335C20.4112 18.2776 20.5847 17.5301 20.2231 16.965C19.8611 16.399 19.1032 16.2285 18.5283 16.585C16.8114 17.6485 14.5992 17.6478 12.8828 16.585C12.6852 16.4625 12.466 16.4018 12.2486 16.3985Z" fill="white" />
+												</g>
+												<defs>
+													<clipPath>
+														<rect width="9.41177" height="16" fill="white" transform="translate(11 8)" />
+													</clipPath>
+												</defs>
+											</svg>
+										</a>
+										<a href="https://www.avito.ru/brands/i180106755/all/nedvizhimost?sellerId=8a2cc685840c609d25088e586f901785" class="s-block__link" target="_blank" rel="noopener nofollow">
+											<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<circle opacity="0.2" cx="16" cy="16" r="16" fill="white" />
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M15.3566 12.0919C15.3566 12.9162 15.0292 13.7067 14.4463 14.2896C13.8635 14.8724 13.0729 15.1999 12.2486 15.1999C11.4243 15.1999 10.6338 14.8724 10.0509 14.2896C9.46807 13.7067 9.14062 12.9162 9.14062 12.0919C9.14062 11.2676 9.46807 10.4771 10.0509 9.8942C10.6338 9.31134 11.4243 8.98389 12.2486 8.98389C13.0729 8.98389 13.8635 9.31134 14.4463 9.8942C15.0292 10.4771 15.3566 11.2676 15.3566 12.0919ZM19.3576 14.5269C20.0033 14.5269 20.6225 14.2704 21.0791 13.8138C21.5356 13.3573 21.7921 12.7381 21.7921 12.0924C21.7921 11.4467 21.5356 10.8275 21.0791 10.3709C20.6225 9.91438 20.0033 9.65789 19.3576 9.65789C18.712 9.65789 18.0927 9.91438 17.6362 10.3709C17.1796 10.8275 16.9231 11.4467 16.9231 12.0924C16.9231 12.7381 17.1796 13.3573 17.6362 13.8138C18.0927 14.2704 18.712 14.5269 19.3576 14.5269ZM23.1406 19.2019C23.1406 20.2051 22.7421 21.1672 22.0328 21.8765C21.3234 22.5859 20.3613 22.9844 19.3581 22.9844C18.3549 22.9844 17.3928 22.5859 16.6835 21.8765C15.9741 21.1672 15.5756 20.2051 15.5756 19.2019C15.5756 18.1987 15.9741 17.2366 16.6835 16.5273C17.3928 15.8179 18.3549 15.4194 19.3581 15.4194C20.3613 15.4194 21.3234 15.8179 22.0328 16.5273C22.7421 17.2366 23.1406 18.1987 23.1406 19.2019ZM14.0086 19.2019C14.0086 19.6687 13.8232 20.1163 13.4931 20.4464C13.1631 20.7765 12.7154 20.9619 12.2486 20.9619C11.7818 20.9619 11.3342 20.7765 11.0041 20.4464C10.6741 20.1163 10.4886 19.6687 10.4886 19.2019C10.4886 18.7351 10.6741 18.2874 11.0041 17.9574C11.3342 17.6273 11.7818 17.4419 12.2486 17.4419C12.7154 17.4419 13.1631 17.6273 13.4931 17.9574C13.8232 18.2874 14.0086 18.7351 14.0086 19.2019Z" fill="white" />
+											</svg>
+										</a>
+										<a href="https://www.cian.ru/company/50629765/" class="s-block__link" target="_blank" rel="noopener nofollow">
+											<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+												<circle opacity="0.2" cx="16" cy="16" r="16" fill="white" />
+												<path fill-rule="evenodd" clip-rule="evenodd" d="M18.3566 11.9398C17.6868 11.9398 17.1443 11.3847 17.1443 10.6996C17.1443 10.0145 17.6868 9.45894 18.3566 9.45894C19.0256 9.45894 19.5685 10.0145 19.5685 10.6996C19.5685 11.3847 19.026 11.9398 18.3566 11.9398ZM18.3566 8.00044C16.8962 8.00044 15.7124 9.21124 15.7124 10.7058C15.7113 11.2951 15.8998 11.8687 16.2493 12.3395L16.4251 12.5885L18.3562 14.9719L20.4635 12.339C20.8128 11.8681 21.0011 11.2946 21 10.7053C21 9.21124 19.8162 8 18.3562 8L18.3566 8.00044ZM19.3655 20.5696V16.0299H17.4071V18.1621L15.45 15.7558L10 22.4559L11.8129 24L15.45 19.5292L19.0871 24L20.8995 22.4559L19.3655 20.5696Z" fill="white" />
+											</svg>
+
+										</a>
+									</div>
+								</div>
+								<div class="header__contacts">
+									<div class="contact-name">
+										Телефон
+									</div>
+									<a href="mailto:fish.mail@mail.com">fish.mail@mail.com</a>
+								</div>
+								<div class="header__contacts">
+									<div class="contact-name">
+										Мы на картах
+									</div>
+									<div class="contact-address">
+
+										<div class="s-block">
+											<a href="https://yandex.ru/maps/org/domvizor/12617624875/?ll=30.332515%2C60.047850&z=13" class="s-block__link" target="_blank">
+												<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<circle opacity="0.2" cx="16" cy="16" r="16" fill="white" />
+													<path d="M16 9C12.6862 9 10 11.6862 10 15C10 16.6563 10.6711 18.156 11.7565 19.2417C12.8422 20.328 15.4 21.9 15.55 23.55C15.5725 23.7974 15.7516 24 16 24C16.2484 24 16.4275 23.7974 16.45 23.55C16.6 21.9 19.1578 20.328 20.2435 19.2417C21.3289 18.156 22 16.6563 22 15C22 11.6862 19.3138 9 16 9Z" fill="white" />
+													<path d="M15.9999 17.1004C17.1597 17.1004 18.0999 16.1602 18.0999 15.0004C18.0999 13.8406 17.1597 12.9004 15.9999 12.9004C14.8401 12.9004 13.8999 13.8406 13.8999 15.0004C13.8999 16.1602 14.8401 17.1004 15.9999 17.1004Z" fill="#434343" />
+												</svg>
+											</a>
+											<a href="https://go.2gis.com/hbjf6" class="s-block__link" target="_blank">
+												<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+													<circle opacity="0.2" cx="16" cy="16" r="16" fill="white" />
+													<path d="M19.4602 17.5208C16.6737 17.535 16.2229 19.275 16.0727 20.7463L16.0044 21.397H15.4443L15.3761 20.7463C15.2258 19.275 14.7614 17.535 12.0705 17.5208C11.6197 16.5588 11.4285 15.7807 11.4285 14.9036C11.4285 12.7109 13.1633 10.6596 15.7312 10.6596C18.2992 10.6596 20.0066 12.6967 20.0066 14.9179C20.0066 15.7807 19.9246 16.5588 19.4602 17.5208ZM15.7039 8C11.4695 8 8 11.5933 8 15.9929C8 20.4067 11.4695 24 15.7039 24C19.9792 24 23.4351 20.4067 23.4351 15.9929C23.4351 11.5933 19.9792 8 15.7039 8Z" fill="white" />
+												</svg>
+											</a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="header__right">
+						<div class="header__wrap">
+							<a class="header__number" href="tel:+79834565683">+7 983 456 56 83</a>
+							<div class="s-block s-block--header">
+								<a href="https://api.whatsapp.com/send?phone=78123335515" class="s-block__link" target="_blank" rel="noopener nofollow">
+									<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<circle opacity="0.2" cx="16" cy="16" r="16" fill="white" />
+										<path d="M16.0007 9.33325C19.6827 9.33325 22.6673 12.3179 22.6673 15.9999C22.6673 19.6819 19.6827 22.6666 16.0007 22.6666C14.8225 22.6685 13.6651 22.3567 12.6473 21.7633L9.33666 22.6666L10.238 19.3546C9.64406 18.3365 9.33203 17.1786 9.33399 15.9999C9.33399 12.3179 12.3187 9.33325 16.0007 9.33325ZM13.7287 12.8666L13.5953 12.8719C13.509 12.8772 13.4246 12.8999 13.3473 12.9386C13.275 12.9795 13.209 13.0307 13.1513 13.0906C13.0713 13.1659 13.026 13.2313 12.9773 13.2946C12.7307 13.6152 12.598 14.0088 12.6 14.4133C12.6013 14.7399 12.6867 15.0579 12.82 15.3553C13.0927 15.9566 13.5413 16.5933 14.1333 17.1833C14.276 17.3253 14.416 17.4679 14.5667 17.6006C15.3023 18.2482 16.1788 18.7153 17.1267 18.9646L17.5053 19.0226C17.6287 19.0293 17.752 19.0199 17.876 19.0139C18.0702 19.0039 18.2597 18.9513 18.4313 18.8599C18.5186 18.8149 18.6038 18.766 18.6867 18.7133C18.6867 18.7133 18.7153 18.6946 18.77 18.6533C18.86 18.5866 18.9153 18.5393 18.99 18.4613C19.0453 18.4039 19.0933 18.3366 19.13 18.2599C19.182 18.1513 19.234 17.9439 19.2553 17.7713C19.2713 17.6393 19.2667 17.5673 19.2647 17.5226C19.262 17.4513 19.2027 17.3773 19.138 17.3459L18.75 17.1719C18.75 17.1719 18.17 16.9193 17.8153 16.7579C17.7782 16.7417 17.7384 16.7324 17.698 16.7306C17.6524 16.7259 17.6063 16.731 17.5628 16.7456C17.5194 16.7602 17.4795 16.784 17.446 16.8153C17.4427 16.8139 17.398 16.8519 16.916 17.4359C16.8883 17.4731 16.8502 17.5012 16.8065 17.5166C16.7628 17.5321 16.7155 17.5341 16.6707 17.5226C16.6272 17.5109 16.5847 17.4962 16.5433 17.4786C16.4607 17.4439 16.432 17.4306 16.3753 17.4066C15.9927 17.2396 15.6385 17.014 15.3253 16.7379C15.2413 16.6646 15.1633 16.5846 15.0833 16.5073C14.8211 16.2561 14.5925 15.9719 14.4033 15.6619L14.364 15.5986C14.3357 15.556 14.3129 15.5101 14.296 15.4619C14.2707 15.3639 14.3367 15.2853 14.3367 15.2853C14.3367 15.2853 14.4987 15.1079 14.574 15.0119C14.6473 14.9186 14.7093 14.8279 14.7493 14.7633C14.828 14.6366 14.8527 14.5066 14.8113 14.4059C14.6247 13.9499 14.4313 13.4959 14.2327 13.0453C14.1933 12.9559 14.0767 12.8919 13.9707 12.8793C13.9347 12.8753 13.8987 12.8713 13.8627 12.8686C13.7731 12.8641 13.6834 12.865 13.594 12.8713L13.728 12.8659L13.7287 12.8666Z" fill="white" />
+									</svg>
+								</a>
+								<a href="https://t.me/dom_vizor" class="s-block__link" target="_blank" rel="noopener nofollow">
+									<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<circle opacity="0.2" cx="16" cy="16" r="16" fill="white" />
+										<g clip-path="url(#clip0_1_77)">
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M21.1846 10.9533C21.3493 10.884 21.5297 10.8601 21.7068 10.8841C21.8839 10.9081 22.0514 10.9791 22.1917 11.0898C22.3321 11.2004 22.4402 11.3467 22.5048 11.5134C22.5695 11.68 22.5883 11.8609 22.5593 12.0373L21.0473 21.2086C20.9006 22.0933 19.9299 22.6006 19.1186 22.16C18.4399 21.7913 17.4319 21.2233 16.5253 20.6306C16.0719 20.334 14.6833 19.384 14.8539 18.708C15.0006 18.13 17.3339 15.958 18.6673 14.6666C19.1906 14.1593 18.9519 13.8666 18.3339 14.3333C16.7986 15.492 14.3353 17.254 13.5206 17.75C12.8019 18.1873 12.4273 18.262 11.9793 18.1873C11.1619 18.0513 10.4039 17.8406 9.78527 17.584C8.94927 17.2373 8.98993 16.088 9.7846 15.7533L21.1846 10.9533Z" fill="white" />
+										</g>
+										<defs>
+											<clipPath id="clip0_1_77">
+												<rect width="16" height="16" fill="white" transform="translate(8 8)" />
+											</clipPath>
+										</defs>
+									</svg>
+								</a>
+							</div>
+						</div>
+						<div class="header__burger">
+							<button class="burger" aria-label="Open menu" aria-expanded="false" data-burger>
+								<span class="burger__line"></span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</header>
+			<section class="hero">
+				<div class="hero__wrapper">
+					<h1 class="hero__title">
+						Агентство<br>
+						недвижимости<br>
+						полного цикла<br>
+					</h1>
+					<div class="hero__wrap">
+						<div class="hero__desc">
+							<p>
+								Сопровождение сделок с недвижимостью от срочной продажи квартиры и поиска объекта до получения
+								ключей
+							</p>
+						</div>
+						<button type="button" class="b-btn b-btn--primary js-show-popup" data-modal-open="modalForm">
+							<span>
+								Получить консультацию
+							</span>
+						</button>
+					</div>
+					<div class="hero__image">
+						<picture>
+							<source srcset="images/hero/hero.webp 1x, images/hero/hero@2x.webp 1.3x" type="image/webp">
+							<source srcset="images/hero/hero.jpg 1x, images/hero/hero@2x.jpg 1.3x" type="image/jpg">
+							<img src="images/hero/hero.jpg" width="1520" height="571" alt="">
+						</picture>
+					</div>
+				</div>
+			</section>
+			<section class="services section-offset" id="services">
+				<div class="services__wrapper">
+					<div class="tabs tabs--services">
+						<h2 class="section-title">
+							Наши услуги
+						</h2>
+						<div class="tabs__head">
+							<div class="tabs__text">
+								<div class="tabs__selected">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g opacity="0.5">
+											<path d="M17.5 21.5H16.5V12.5H7.5V21.5H6.5V11.5H17.5V21.5Z" fill="white" />
+											<path d="M13 18.5H11V19.5H13V18.5Z" fill="white" />
+											<path d="M21 22H3V8.85498H4V21H20V8.85498H21V22Z" fill="white" />
+											<path d="M22.0601 10.68L12.0001 2.97997L1.94008 10.68L1.33008 9.88497L12.0001 1.71997L22.6701 9.88497L22.0601 10.68Z" fill="white" />
+										</g>
+									</svg>
+									Покупка недвижимости
+								</div>
+							</div>
+							<ul class="tabs__buttons">
+								<li class="tabs__item">
+									<button type="button" class="tabs__button tabs__button--services active" data-item="item-1">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<g opacity="0.5">
+												<path d="M17.5 21.5H16.5V12.5H7.5V21.5H6.5V11.5H17.5V21.5Z" fill="white" />
+												<path d="M13 18.5H11V19.5H13V18.5Z" fill="white" />
+												<path d="M21 22H3V8.85498H4V21H20V8.85498H21V22Z" fill="white" />
+												<path d="M22.0601 10.68L12.0001 2.97997L1.94008 10.68L1.33008 9.88497L12.0001 1.71997L22.6701 9.88497L22.0601 10.68Z" fill="white" />
+											</g>
+										</svg>
+										<span>Покупка недвижимости</span>
+									</button>
+								</li>
+								<li class="tabs__item">
+									<button type="button" class="tabs__button tabs__button--services" data-item="item-2">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<g opacity="0.5">
+												<path d="M3 22.5H2V2.5H23V3.5H3V22.5Z" fill="white" />
+												<path d="M21.5 20.5H4.5V5H21.5V20.5ZM5.5 19.5H20.5V6H5.5V19.5Z" fill="white" />
+												<path d="M10 3H9V5.5H10V3Z" fill="white" />
+												<path d="M17 3H16V5.5H17V3Z" fill="white" />
+												<path d="M17 17.5001H9V10.8201H10V16.5001H16V10.8201H17V17.5001Z" fill="white" />
+												<path d="M17.6398 12.24L12.9998 8.96499L8.35979 12.24L7.77979 11.42L12.9998 7.73999L18.2198 11.42L17.6398 12.24Z" fill="white" />
+											</g>
+										</svg>
+										<span>Продажа недвижимости</span>
+									</button>
+								</li>
+								<li class="tabs__item">
+									<button type="button" class="tabs__button tabs__button--services" data-item="item-3">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<g opacity="0.5" clip-path="url(#clip0_1_138)">
+												<path d="M21.0909 22H3.90909C3.40277 22 2.91718 21.797 2.55916 21.4357C2.20113 21.0745 2 20.5845 2 20.0736V6.5894C2 6.07851 2.20113 5.58855 2.55916 5.22729C2.91718 4.86604 3.40277 4.66309 3.90909 4.66309H9.95613V5.62625H3.90909C3.65593 5.62625 3.41314 5.72772 3.23412 5.90835C3.05511 6.08897 2.95455 6.33396 2.95455 6.5894V20.0736C2.95455 20.3291 3.05511 20.5741 3.23412 20.7547C3.41314 20.9353 3.65593 21.0368 3.90909 21.0368H21.0909C21.3441 21.0368 21.5868 20.9353 21.7659 20.7547C21.9449 20.5741 22.0455 20.3291 22.0455 20.0736V8.9973C22.0455 8.74186 21.9449 8.49687 21.7659 8.31625C21.5868 8.13562 21.3441 8.03414 21.0909 8.03414H4.38636V7.07098H21.0909C21.5972 7.07098 22.0828 7.27394 22.4408 7.63519C22.7989 7.99644 23 8.48641 23 8.9973V20.0736C23 20.5845 22.7989 21.0745 22.4408 21.4357C22.0828 21.797 21.5972 22 21.0909 22Z" fill="white" />
+												<path d="M21.0909 7.55256H20.1363V6.5894C20.1363 6.33396 20.0358 6.08897 19.8568 5.90835C19.6777 5.72772 19.435 5.62625 19.1818 5.62625H15.7598V4.66309H19.1818C19.6881 4.66309 20.1737 4.86604 20.5317 5.22729C20.8898 5.58855 21.0909 6.07851 21.0909 6.5894V7.55256Z" fill="white" />
+												<path d="M22.5228 17.6657H16.3182C15.5587 17.6657 14.8304 17.3612 14.2933 16.8194C13.7563 16.2775 13.4546 15.5425 13.4546 14.7762C13.4546 14.0099 13.7563 13.2749 14.2933 12.733C14.8304 12.1911 15.5587 11.8867 16.3182 11.8867H22.5228V12.8499H16.3182C15.8119 12.8499 15.3263 13.0528 14.9683 13.4141C14.6103 13.7753 14.4091 14.2653 14.4091 14.7762C14.4091 15.2871 14.6103 15.7771 14.9683 16.1383C15.3263 16.4996 15.8119 16.7025 16.3182 16.7025H22.5228V17.6657Z" fill="white" />
+												<path d="M16.7954 14.2947H15.8408V15.2578H16.7954V14.2947Z" fill="white" />
+												<path d="M6.00424 7.97159L5.53174 7.13364L14.4615 2L17.5781 7.30701L16.7572 7.79822L14.1179 3.30508L6.00424 7.97159Z" fill="white" />
+											</g>
+											<defs>
+												<clipPath id="clip0_1_138">
+													<rect width="21" height="20" fill="white" transform="translate(2 2)" />
+												</clipPath>
+											</defs>
+										</svg>
+										<span>Ипотека</span>
+									</button>
+								</li>
+								<li class="tabs__item">
+									<button type="button" class="tabs__button tabs__button--services" data-item="item-4">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<g opacity="0.5">
+												<g clip-path="url(#clip0_1_147)">
+													<path d="M22 23H2V1H22V23ZM3.11111 21.9H20.8889V2.1H3.11111V21.9Z" fill="white" />
+													<path d="M8.66683 12H5.3335V13.1H8.66683V12Z" fill="white" />
+													<path d="M18.6668 12H15.3335V13.1H18.6668V12Z" fill="white" />
+													<path d="M8.66683 15.3H5.3335V16.4H8.66683V15.3Z" fill="white" />
+													<path d="M13.6668 12H10.3335V13.1H13.6668V12Z" fill="white" />
+													<path d="M13.6668 15.3H10.3335V16.4H13.6668V15.3Z" fill="white" />
+													<path d="M18.6668 15.3H15.3335V16.4H18.6668V15.3Z" fill="white" />
+													<path d="M8.66683 18.6001H5.3335V19.7001H8.66683V18.6001Z" fill="white" />
+													<path d="M13.6668 18.6001H10.3335V19.7001H13.6668V18.6001Z" fill="white" />
+													<path d="M18.6668 18.6001H15.3335V19.7001H18.6668V18.6001Z" fill="white" />
+													<path d="M18.6668 9.25005H5.3335V4.30005H18.6668V9.25005ZM6.44461 8.15005H17.5557V5.40005H6.44461V8.15005Z" fill="white" />
+												</g>
+											</g>
+											<defs>
+												<clipPath id="clip0_1_147">
+													<rect width="20" height="22" fill="white" transform="translate(2 1)" />
+												</clipPath>
+											</defs>
+										</svg>
+										<span>Налоговая консультация</span>
+									</button>
+								</li>
+							</ul>
+						</div>
+						<div class="tabs__content active" id="item-1">
+							<div class="services-item">
+								<div class="services-item__img">
+									<picture>
+										<source srcset="images/services/purchase-1.webp 1x, images/services/purchase-1@2x.webp 1.3x" type="image/webp">
+										<source srcset="images/services/purchase-1.jpg 1x, images/services/purchase-1@2x.jpg 1.3x" type="image/jpg">
+										<img src="images/services/purchase-1.jpg" width="590" height="349" alt="">
+									</picture>
+								</div>
+								<div class="services-item__about">
+									<h3 class="services-item__title">
+										Квартира в новостройке
+									</h3>
+									<div class="services-item__desc">
+										<p>
+											Наша компания работает только с надежными застройщиками. Подберем квартиру по вашим
+											критериям, расскажем о выгодных акциях от наших партнеров и возьмем всю бумажную
+											волокиту на себя.
+										</p>
+									</div>
+									<button type="button" class="b-btn b-btn--primary js-show-popup" data-trigger="connection-popup">
+										<span>Заказать услугу</span>
+									</button>
+								</div>
+							</div>
+							<div class="services-item">
+								<div class="services-item__img">
+									<picture>
+										<source srcset="images/services/purchase-2.webp 1x, images/services/purchase-2@2x.webp 1.3x" type="image/webp">
+										<source srcset="images/services/purchase-2.jpg 1x, images/services/purchase-2@2x.jpg 1.3x" type="image/jpg">
+										<img src="images/services/purchase-2.jpg" width="590" height="349" alt="">
+									</picture>
+								</div>
+								<div class="services-item__about">
+									<h3 class="services-item__title">
+										Коммерческая недвижимость
+									</h3>
+									<div class="services-item__desc">
+										<p>
+											Подберем оптимальный вариант для покупки или аренды объекта под ваш бизнес. Найдем офис
+											или торговое помещение в новостройке от застройщика.
+										</p>
+									</div>
+									<button type="button" class="b-btn b-btn--primary js-show-popup" data-trigger="connection-popup">
+										<span>Заказать услугу</span>
+									</button>
+								</div>
+							</div>
+							<div class="services-item">
+								<div class="services-item__img">
+									<picture>
+										<source srcset="images/services/purchase-3.webp 1x, images/services/purchase-3@2x.webp 1.3x" type="image/webp">
+										<source srcset="images/services/purchase-3.jpg 1x, images/services/purchase-3@2x.jpg 1.3x" type="image/jpg">
+										<img src="images/services/purchase-3.jpg" width="590" height="349" alt="">
+									</picture>
+								</div>
+								<div class="services-item__about">
+									<h3 class="services-item__title">
+										Квартира на вторичном рынке
+									</h3>
+									<div class="services-item__desc">
+										<p>
+											Подберем лучшие варианты, проверим документы и договоримся о самых выгодных условиях с
+											продавцом. Обеспечим финансовую безопасность сделки и передадим вам ключи от новой
+											квартиры.
+										</p>
+									</div>
+									<button type="button" class="b-btn b-btn--primary js-show-popup" data-trigger="connection-popup">
+										<span>Заказать услугу</span>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="tabs__content" id="item-2">
+							<div class="services-item">
+								<div class="services-item__img">
+									<picture>
+										<source srcset="images/services/sale-1.webp 1x, images/services/sale-1@2x.webp 1.3x" type="image/webp">
+										<source srcset="images/services/sale-1.jpg 1x, images/services/sale-1@2x.jpg 1.3x" type="image/jpg">
+										<img src="images/services/sale-1.jpg" width="590" height="349" alt="">
+									</picture>
+								</div>
+								<div class="services-item__about">
+									<h3 class="services-item__title">
+										Квартира
+									</h3>
+									<div class="services-item__desc">
+										<p>
+											Поможем выгодно и быстро продать вашу квартиру. Оценим объект, организуем эффективную
+											рекламу, соберем нужные документы и проведем сделку.
+										</p>
+									</div>
+									<button type="button" class="b-btn b-btn--primary js-show-popup" data-trigger="connection-popup">
+										<span>Заказать услугу</span>
+									</button>
+								</div>
+							</div>
+							<div class="services-item">
+								<div class="services-item__img">
+									<picture>
+										<source srcset="images/services/sale-2.webp 1x, images/services/sale-2@2x.webp 1.3x" type="image/webp">
+										<source srcset="images/services/sale-2.jpg 1x, images/services/sale-2@2x.jpg 1.3x" type="image/jpg">
+										<img src="images/services/sale-2.jpg" width="590" height="349" alt="">
+									</picture>
+								</div>
+								<div class="services-item__about">
+									<h3 class="services-item__title">
+										Продажа недвижимости
+									</h3>
+									<div class="services-item__desc">
+										<p>
+											Оформим и проведем сделку по продаже коммерческой недвижимости по максимально возможной
+											цене.
+										</p>
+									</div>
+									<button type="button" class="b-btn b-btn--primary js-show-popup" data-trigger="connection-popup">
+										<span>Заказать услугу</span>
+									</button>
+								</div>
+							</div>
+							<div class="services-item">
+								<div class="services-item__img">
+									<picture>
+										<source srcset="images/services/sale-3.webp 1x, images/services/sale-3@2x.webp 1.3x" type="image/webp">
+										<source srcset="images/services/sale-3.jpg 1x, images/services/sale-3@2x.jpg 1.3x" type="image/jpg">
+										<img src="images/services/sale-3.jpg" width="590" height="349" alt="">
+									</picture>
+								</div>
+								<div class="services-item__about">
+									<h3 class="services-item__title">
+										Продажа на аукционе
+									</h3>
+									<div class="services-item__desc">
+										<p>
+											Поможем продать квартиру по максимальной цене в самые короткие сроки с помощью
+											проведения аукциона. Проведем торги и оформим договор с тем, кто назвал более высокую
+											стоимость
+										</p>
+									</div>
+									<button type="button" class="b-btn b-btn--primary js-show-popup" data-trigger="connection-popup">
+										<span>Заказать услугу</span>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="tabs__content" id="item-3">
+							<div class="services-item">
+								<div class="services-item__img">
+									<picture>
+										<source srcset="images/services/mortgage-1.webp 1x, images/services/mortgage-1@2x.webp 1.3x" type="image/webp">
+										<source srcset="images/services/mortgage-1.jpg 1x, images/services/mortgage-1@2x.jpg 1.3x" type="image/jpg">
+										<img src="images/services/mortgage-1.jpg" width="590" height="349" alt="">
+									</picture>
+								</div>
+								<div class="services-item__about">
+									<h3 class="services-item__title">
+										Оформление ипотеки
+									</h3>
+									<div class="services-item__desc">
+										<p>
+											Подберем для вас наиболее выгодную процентную ставку, поможем получить ипотеку и
+											подскажем, как использовать материнский капитал и субсидии.
+										</p>
+									</div>
+									<button type="button" class="b-btn b-btn--primary js-show-popup" data-trigger="connection-popup">
+										<span>Заказать услугу</span>
+									</button>
+								</div>
+							</div>
+							<div class="services-item">
+								<div class="services-item__img">
+									<picture>
+										<source srcset="images/services/mortgage-2.webp 1x, images/services/mortgage-2@2x.webp 1.3x" type="image/webp">
+										<source srcset="images/services/mortgage-2.jpg 1x, images/services/mortgage-2@2x.jpg 1.3x" type="image/jpg">
+										<img src="images/services/mortgage-2.jpg" width="590" height="349" alt="">
+									</picture>
+								</div>
+								<div class="services-item__about">
+									<h3 class="services-item__title">
+										Страхование ипотеки
+									</h3>
+									<div class="services-item__desc">
+										<p>
+											Мы работаем со всеми страховыми компаниями. Учтем все ваши потребности, поможем с
+											заполнением необходимых документов и предоставим лучшие варианты страхования.
+										</p>
+									</div>
+									<button type="button" class="b-btn b-btn--primary js-show-popup" data-trigger="connection-popup">
+										<span>Заказать услугу</span>
+									</button>
+								</div>
+							</div>
+						</div>
+						<div class="tabs__content" id="item-4">
+							<div class="services-item">
+								<div class="services-item__img">
+									<picture>
+										<source srcset="images/services/tax-1.webp 1x, images/services/tax-1@2x.webp 1.3x" type="image/webp">
+										<source srcset="images/services/tax-1.jpg 1x, images/services/tax-1@2x.jpg 1.3x" type="image/jpg">
+										<img src="images/services/tax-1.jpg" width="590" height="349" alt="">
+									</picture>
+								</div>
+								<div class="services-item__about">
+									<h3 class="services-item__title">
+										Налоговая консультация
+									</h3>
+									<div class="services-item__desc">
+										<p>
+											Проведем консультацию, поможем грамотно оптимизировать налогообложение и сэкономить
+											деньги при продаже недвижимости.
+										</p>
+									</div>
+									<button type="button" class="b-btn b-btn--primary js-show-popup" data-trigger="connection-popup">
+										<span>Заказать услугу</span>
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="housing section-offset" data-slider="housing-slider" id="housing">
+				<div class="housing__head">
+					<h2 class="section-title housing__title">
+						Жилые комплексы
+					</h2>
+					<div class="swiper-nav">
+						<div class="housing-prev swiper-button swiper-button-prev">
+							<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<rect x="0.5" y="0.500008" width="47" height="47" stroke="#434343" />
+								<path d="M31 24L17 24" stroke="white" stroke-linecap="round" />
+								<path d="M23 18L17 24L23 30" stroke="white" stroke-linecap="round" />
+							</svg>
+						</div>
+						<div class="housing-next swiper-button swiper-button-next">
+							<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<rect x="47.5" y="47.5" width="47" height="47" transform="rotate(-180 47.5 47.5)" stroke="#434343" />
+								<path d="M17 24L31 24" stroke="white" stroke-linecap="round" />
+								<path d="M25 30L31 24L25 18" stroke="white" stroke-linecap="round" />
+							</svg>
+						</div>
+					</div>
+				</div>
+				<div class="housing__wrapper">
+					<div class="swiper swiper--housing">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<a href="#" class="product-card product-card--housing">
+									<div class="product-card__img">
+										<picture>
+											<source srcset="images/housing/housing-1.webp 1x, images/housing/housing-1@2x.webp 1.3x" type="image/webp">
+											<source srcset="images/housing/housing-1.jpg 1x, images/housing/housing-1@2x.jpg 1.3x" type="image/jpg">
+											<img src="images/housing/housing-1.jpg" width="460" height="452" alt="">
+										</picture>
+									</div>
+									<div class="product-card__name">
+										Название ЖК
+									</div>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="product-card product-card--housing">
+									<div class="product-card__img">
+										<picture>
+											<source srcset="images/housing/housing-2.webp 1x, images/housing/housing-2@2x.webp 1.3x" type="image/webp">
+											<source srcset="images/housing/housing-2.jpg 1x, images/housing/housing-2@2x.jpg 1.3x" type="image/jpg">
+											<img src="images/housing/housing-2.jpg" width="460" height="299" alt="">
+										</picture>
+									</div>
+									<div class="product-card__name">
+										Название ЖК
+									</div>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="product-card product-card--housing">
+									<div class="product-card__img">
+										<picture>
+											<source srcset="images/housing/housing-3.webp 1x, images/housing/housing-3@2x.webp 1.3x" type="image/webp">
+											<source srcset="images/housing/housing-3.jpg 1x, images/housing/housing-3@2x.jpg 1.3x" type="image/jpg">
+											<img src="images/housing/housing-3.jpg" width="460" height="373" alt="">
+										</picture>
+									</div>
+									<div class="product-card__name">
+										Название ЖК
+									</div>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="product-card product-card--housing">
+									<div class="product-card__img">
+										<picture>
+											<source srcset="images/housing/housing-1.webp 1x, images/housing/housing-1@2x.webp 1.3x" type="image/webp">
+											<source srcset="images/housing/housing-1.jpg 1x, images/housing/housing-1@2x.jpg 1.3x" type="image/jpg">
+											<img src="images/housing/housing-1.jpg" width="460" height="452" alt="">
+										</picture>
+									</div>
+									<div class="product-card__name">
+										Название ЖК
+									</div>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="product-card product-card--housing">
+									<div class="product-card__img">
+										<picture>
+											<source srcset="images/housing/housing-2.webp 1x, images/housing/housing-2@2x.webp 1.3x" type="image/webp">
+											<source srcset="images/housing/housing-2.jpg 1x, images/housing/housing-2@2x.jpg 1.3x" type="image/jpg">
+											<img src="images/housing/housing-2.jpg" width="460" height="299" alt="">
+										</picture>
+									</div>
+									<div class="product-card__name">
+										Название ЖК
+									</div>
+								</a>
+							</div>
+							<div class="swiper-slide">
+								<a href="#" class="product-card product-card--housing">
+									<div class="product-card__img">
+										<picture>
+											<source srcset="images/housing/housing-3.webp 1x, images/housing/housing-3@2x.webp 1.3x" type="image/webp">
+											<source srcset="images/housing/housing-3.jpg 1x, images/housing/housing-3@2x.jpg 1.3x" type="image/jpg">
+											<img src="images/housing/housing-3.jpg" width="460" height="373" alt="">
+										</picture>
+									</div>
+									<div class="product-card__name">
+										Название ЖК
+									</div>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="partners section-offset" data-slider="partners-slider">
+				<div class="partners__wrapper">
+					<div class="partners__head">
+						<h2 class="section-title partners__title">
+							Наши партнеры
+						</h2>
+						<div class="swiper-nav">
+							<div class="partners-prev swiper-button swiper-button-prev">
+								<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<rect x="0.5" y="0.500008" width="47" height="47" stroke="#434343" />
+									<path d="M31 24L17 24" stroke="white" stroke-linecap="round" />
+									<path d="M23 18L17 24L23 30" stroke="white" stroke-linecap="round" />
+								</svg>
+							</div>
+							<div class="partners-next swiper-button swiper-button-next">
+								<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<rect x="47.5" y="47.5" width="47" height="47" transform="rotate(-180 47.5 47.5)" stroke="#434343" />
+									<path d="M17 24L31 24" stroke="white" stroke-linecap="round" />
+									<path d="M25 30L31 24L25 18" stroke="white" stroke-linecap="round" />
+								</svg>
+							</div>
+						</div>
+					</div>
+					<div class="partners__wrap">
+						<div class="swiper swiper--partners">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<picture>
+										<source srcset="images/partners/partners-1.webp 1x, images/partners/partners-1@2x.webp 1.3x" type="image/webp">
+										<source srcset="images/partners/partners-1.png 1x, images/partners/partners-1@2x.png 1.3x" type="image/png">
+										<img src="images/partners/partners-1.png" width="158" height="43" alt="">
+									</picture>
+								</div>
+								<div class="swiper-slide">
+									<picture>
+										<source srcset="images/partners/partners-2.webp 1x, images/partners/partners-2@2x.webp 1.3x" type="image/webp">
+										<source srcset="images/partners/partners-2.png 1x, images/partners/partners-2@2x.png 1.3x" type="image/png">
+										<img src="images/partners/partners-2.png" width="183" height="48" alt="">
+									</picture>
+								</div>
+								<div class="swiper-slide">
+									<picture>
+										<source srcset="images/partners/partners-3.webp 1x, images/partners/partners-3@2x.webp 1.3x" type="image/webp">
+										<source srcset="images/partners/partners-3.png 1x, images/partners/partners-3@2x.png 1.3x" type="image/png">
+										<img src="images/partners/partners-3.png" width="211" height="33" alt="">
+									</picture>
+								</div>
+								<div class="swiper-slide">
+									<picture>
+										<source srcset="images/partners/partners-1.webp 1x, images/partners/partners-1@2x.webp 1.3x" type="image/webp">
+										<source srcset="images/partners/partners-1.png 1x, images/partners/partners-1@2x.png 1.3x" type="image/png">
+										<img src="images/partners/partners-1.png" width="152" height="31" alt="">
+									</picture>
+								</div>
+								<div class="swiper-slide">
+									<picture>
+										<source srcset="images/partners/partners-2.webp 1x, images/partners/partners-2@2x.webp 1.3x" type="image/webp">
+										<source srcset="images/partners/partners-2.png 1x, images/partners/partners-2@2x.png 1.3x" type="image/png">
+										<img src="images/partners/partners-2.png" width="183" height="48" alt="">
+									</picture>
+								</div>
+								<div class="swiper-slide">
+									<picture>
+										<source srcset="images/partners/partners-1.webp 1x, images/partners/partners-1@2x.webp 1.3x" type="image/webp">
+										<source srcset="images/partners/partners-1.png 1x, images/partners/partners-1@2x.png 1.3x" type="image/png">
+										<img src="images/partners/partners-1.png" width="158" height="43" alt="">
+									</picture>
+								</div>
+								<div class="swiper-slide">
+									<picture>
+										<source srcset="images/partners/partners-2.webp 1x, images/partners/partners-2@2x.webp 1.3x" type="image/webp">
+										<source srcset="images/partners/partners-2.png 1x, images/partners/partners-2@2x.png 1.3x" type="image/png">
+										<img src="images/partners/partners-2.png" width="183" height="48" alt="">
+									</picture>
+								</div>
+								<div class="swiper-slide">
+									<picture>
+										<source srcset="images/partners/partners-3.webp 1x, images/partners/partners-3@2x.webp 1.3x" type="image/webp">
+										<source srcset="images/partners/partners-3.png 1x, images/partners/partners-3@2x.png 1.3x" type="image/png">
+										<img src="images/partners/partners-3.png" width="211" height="33" alt="">
+									</picture>
+								</div>
+								<div class="swiper-slide">
+									<picture>
+										<source srcset="images/partners/partners-1.webp 1x, images/partners/partners-1@2x.webp 1.3x" type="image/webp">
+										<source srcset="images/partners/partners-1.png 1x, images/partners/partners-1@2x.png 1.3x" type="image/png">
+										<img src="images/partners/partners-1.png" width="152" height="31" alt="">
+									</picture>
+								</div>
+								<div class="swiper-slide">
+									<picture>
+										<source srcset="images/partners/partners-2.webp 1x, images/partners/partners-2@2x.webp 1.3x" type="image/webp">
+										<source srcset="images/partners/partners-2.png 1x, images/partners/partners-2@2x.png 1.3x" type="image/png">
+										<img src="images/partners/partners-2.png" width="183" height="48" alt="">
+									</picture>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="stages section-offset" id="stages">
+				<h2 class="section-title stages__title">
+					Этапы работы с нами
+				</h2>
+				<div class="stages__wrapper">
+					<div class="tabs tabs--stages">
+						<div class="tabs__head">
+							<div class="tabs__text">
+								<div class="tabs__selected">
+									<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<g opacity="0.5">
+											<path d="M17.5 21.5H16.5V12.5H7.5V21.5H6.5V11.5H17.5V21.5Z" fill="white" />
+											<path d="M13 18.5H11V19.5H13V18.5Z" fill="white" />
+											<path d="M21 22H3V8.85498H4V21H20V8.85498H21V22Z" fill="white" />
+											<path d="M22.0601 10.68L12.0001 2.97997L1.94008 10.68L1.33008 9.88497L12.0001 1.71997L22.6701 9.88497L22.0601 10.68Z" fill="white" />
+										</g>
+									</svg>
+									Покупка недвижимости
+								</div>
+							</div>
+							<ul class="tabs__buttons">
+								<li class="tabs__item">
+									<button type="button" class="tabs__button active" data-item="purchase">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<g opacity="0.5">
+												<path d="M17.5 21.5H16.5V12.5H7.5V21.5H6.5V11.5H17.5V21.5Z" fill="white" />
+												<path d="M13 18.5H11V19.5H13V18.5Z" fill="white" />
+												<path d="M21 22H3V8.85498H4V21H20V8.85498H21V22Z" fill="white" />
+												<path d="M22.0601 10.68L12.0001 2.97997L1.94008 10.68L1.33008 9.88497L12.0001 1.71997L22.6701 9.88497L22.0601 10.68Z" fill="white" />
+											</g>
+										</svg>
+										<span>Покупка недвижимости</span>
+									</button>
+								</li>
+								<li class="tabs__item">
+									<button type="button" class="tabs__button" data-item="sale">
+										<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+											<g opacity="0.5">
+												<path d="M3 22.5H2V2.5H23V3.5H3V22.5Z" fill="white" />
+												<path d="M21.5 20.5H4.5V5H21.5V20.5ZM5.5 19.5H20.5V6H5.5V19.5Z" fill="white" />
+												<path d="M10 3H9V5.5H10V3Z" fill="white" />
+												<path d="M17 3H16V5.5H17V3Z" fill="white" />
+												<path d="M17 17.5001H9V10.8201H10V16.5001H16V10.8201H17V17.5001Z" fill="white" />
+												<path d="M17.6398 12.24L12.9998 8.96499L8.35979 12.24L7.77979 11.42L12.9998 7.73999L18.2198 11.42L17.6398 12.24Z" fill="white" />
+											</g>
+										</svg>
+										<span>Продажа недвижимости</span>
+									</button>
+								</li>
+							</ul>
+						</div>
+						<div class="tabs__content active" id="purchase">
+							<div class="accordion accordion--stages">
+								<button type="button" class="accordion__control">
+									<span class="accordion__count">01</span>
+									<span class="accordion__title">Консультация и подбор</span>
+									<span class="accordion__icon">
+										<img src="images/icon/arrow-down.svg" alt="" width="24" height="24">
+									</span>
+								</button>
+								<div class="accordion__content">
+									<div class="accordion__main">
+										<div class="stages__text">
+											<p>
+												На консультации вы описываете квартиру, которую хотите приобрести. Мы подбираем
+												лучшие варианты, опираясь на ваши потребности.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="accordion accordion--stages">
+								<button type="button" class="accordion__control">
+									<span class="accordion__count">02</span>
+									<span class="accordion__title">Проведение экскурсий</span>
+									<span class="accordion__icon">
+										<img src="images/icon/arrow-down.svg" alt="" width="24" height="24">
+									</span>
+								</button>
+								<div class="accordion__content">
+									<div class="accordion__main">
+										<div class="stages__text">
+											<p>
+												Организовываем показы в удобное для вас время, подбираем специальные предложения от
+												застройщиков, договариваемся о выгодных условиях с собственниками вторичного жилья.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="accordion accordion--stages">
+								<button type="button" class="accordion__control">
+									<span class="accordion__count">03</span>
+									<span class="accordion__title">Оформление документов</span>
+									<span class="accordion__icon">
+										<img src="images/icon/arrow-down.svg" alt="" width="24" height="24">
+									</span>
+								</button>
+								<div class="accordion__content">
+									<div class="accordion__main">
+										<div class="stages__text">
+											<p>
+												При необходимости помогаем с одобрением ипотеки, оформляем страхование, собираем и
+												оформляем нужные документы.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="accordion accordion--stages">
+								<button type="button" class="accordion__control">
+									<span class="accordion__count">04</span>
+									<span class="accordion__title">Проведение сделки</span>
+									<span class="accordion__icon">
+										<img src="images/icon/arrow-down.svg" alt="" width="24" height="24">
+									</span>
+								</button>
+								<div class="accordion__content">
+									<div class="accordion__main">
+										<div class="stages__text">
+											<p>
+												Обеспечиваем финансовую безопасность сделки, при необходимости принимаем квартиру
+												после сдачи застройщиком.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="tabs__content" id="sale">
+							<div class="accordion accordion--stages">
+								<button type="button" class="accordion__control">
+									<span class="accordion__title">Консультация и оценка стоимости</span>
+									<span class="accordion__icon">
+										<img src="images/icon/arrow-down.svg" alt="" width="24" height="24">
+									</span>
+								</button>
+								<div class="accordion__content">
+									<div class="accordion__main">
+										<div class="stages__text">
+											<p>
+												На консультации проводим оценку объекта, обсуждаем детали и договариваемся о
+												сотрудничестве.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="accordion accordion--stages">
+								<button type="button" class="accordion__control">
+									<span class="accordion__title">Организация показов</span>
+									<span class="accordion__icon">
+										<img src="images/icon/arrow-down.svg" alt="" width="24" height="24">
+									</span>
+								</button>
+								<div class="accordion__content">
+									<div class="accordion__main">
+										<div class="stages__text">
+											<p>
+												Организуем эффективную рекламу, находим потенциальных покупателей, проводим показы.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="accordion accordion--stages">
+								<button type="button" class="accordion__control">
+									<span class="accordion__title">Проведение сделки</span>
+									<span class="accordion__icon">
+										<img src="images/icon/arrow-down.svg" alt="" width="24" height="24">
+									</span>
+								</button>
+								<div class="accordion__content">
+									<div class="accordion__main">
+										<div class="stages__text">
+											<p>
+												Подготавливаем все необходимые документы, оформляем договор, проводим сделку до
+												успешного завершения — получения вами денег.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="about section-offset" id="about">
+				<div class="about__wrapper">
+					<div class="about__left">
+						<h2 class="section-title about__title">
+							О компании
+						</h2>
+						<div class="about__images">
+							<div class="about__img">
+								<picture>
+									<source srcset="images/about/about-big.webp 1x, images/about/about-big@2x.webp 1.3x" type="image/webp">
+									<source srcset="images/about/about-big.jpg 1x, images/about/about-big@2x.jpg 1.3x" type="image/jpg">
+									<img src="images/about/about-big.jpg" width="509" height="376" alt="" data-animation-on-scroll="image">
+								</picture>
+							</div>
+							<div class="about__img">
+								<picture>
+									<source srcset="images/about/about-small.webp 1x, images/about/about-small@2x.webp 1.3x" type="image/webp">
+									<source srcset="images/about/about-small.jpg 1x, images/about/about-small@2x.jpg 1.3x" type="image/jpg">
+									<img src="images/about/about-small.jpg" width="259" height="219" alt="" data-animation-on-scroll="image">
+								</picture>
+							</div>
+						</div>
+					</div>
+					<div class="about__desc">
+						<div class="about__text">
+							<p>
+								Domvizor — агентство недвижимости полного цикла, которое с 2016 года помогает людям покупать и
+								продавать недвижимость в Санкт-Петербурге и Ленобласти.
+							</p>
+							<p>
+								В нашей команде только профессиональные риэлторы с большим опытом работы. Мы умеем уберечь своих
+								клиентов от ненужных проблем, лишней бумажной волокиты и сложных юридических тонкостей. Берем на
+								себя все процессы по покупке и продаже квартиры, привлекая вас только на ключевых этапах.
+							</p>
+						</div>
+						<button type="button" class="b-btn b-btn--primary" data-modal-open="modalForm">
+							<span>Получить консультацию</span>
+						</button>
+					</div>
+				</div>
+			</section>
+			<section class="team section-offset" data-slider="team-slider">
+				<div class="team__head">
+					<h2 class="section-title team__title">
+						Наши сотрудники
+					</h2>
+					<div class="swiper-nav">
+						<div class="team-prev swiper-button swiper-button-prev">
+							<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<rect x="0.5" y="0.500008" width="47" height="47" stroke="#434343" />
+								<path d="M31 24L17 24" stroke="white" stroke-linecap="round" />
+								<path d="M23 18L17 24L23 30" stroke="white" stroke-linecap="round" />
+							</svg>
+						</div>
+						<div class="team-next swiper-button swiper-button-next">
+							<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<rect x="47.5" y="47.5" width="47" height="47" transform="rotate(-180 47.5 47.5)" stroke="#434343" />
+								<path d="M17 24L31 24" stroke="white" stroke-linecap="round" />
+								<path d="M25 30L31 24L25 18" stroke="white" stroke-linecap="round" />
+							</svg>
+						</div>
+					</div>
+				</div>
+				<div class="team__wrapper">
+					<div class="swiper swiper--team">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide">
+								<div class="team-card">
+									<div class="team-card__img">
+										<picture>
+											<source srcset="images/team/team-1.webp 1x, images/team/team-1@2x.webp 1.3x" type="image/webp">
+											<source srcset="images/team/team-1.jpg 1x, images/team/team-1@2x.jpg 1.3x" type="image/jpg">
+											<img src="images/team/team-1.jpg" width="460" height="373" alt="">
+										</picture>
+									</div>
+									<div class="team-card__wrap">
+										<div class="team-card__name">
+											Алексей Иванов
+										</div>
+										<div class="team-card__job">
+											Брокер по новостройкам
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="team-card">
+									<div class="team-card__img">
+										<picture>
+											<source srcset="images/team/team-2.webp 1x, images/team/team-2@2x.webp 1.3x" type="image/webp">
+											<source srcset="images/team/team-2.jpg 1x, images/team/team-2@2x.jpg 1.3x" type="image/jpg">
+											<img src="images/team/team-2.jpg" width="460" height="299" alt="">
+										</picture>
+									</div>
+									<div class="team-card__wrap">
+										<div class="team-card__name">
+											Мария сафонова
+										</div>
+										<div class="team-card__job">
+											Брокер по новостройкам
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="team-card">
+									<div class="team-card__img">
+										<picture>
+											<source srcset="images/team/team-3.webp 1x, images/team/team-3@2x.webp 1.3x" type="image/webp">
+											<source srcset="images/team/team-3.jpg 1x, images/team/team-3@2x.jpg 1.3x" type="image/jpg">
+											<img src="images/team/team-3.jpg" width="460" height="373" alt="">
+										</picture>
+									</div>
+									<div class="team-card__wrap">
+										<div class="team-card__name">
+											Мария сафонова
+										</div>
+										<div class="team-card__job">
+											Брокер по новостройкам
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="team-card">
+									<div class="team-card__img">
+										<picture>
+											<source srcset="images/team/team-1.webp 1x, images/team/team-1@2x.webp 1.3x" type="image/webp">
+											<source srcset="images/team/team-1.jpg 1x, images/team/team-1@2x.jpg 1.3x" type="image/jpg">
+											<img src="images/team/team-1.jpg" width="460" height="373" alt="">
+										</picture>
+									</div>
+									<div class="team-card__wrap">
+										<div class="team-card__name">
+											Алексей Иванов
+										</div>
+										<div class="team-card__job">
+											Брокер по новостройкам
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="team-card">
+									<div class="team-card__img">
+										<picture>
+											<source srcset="images/team/team-2.webp 1x, images/team/team-2@2x.webp 1.3x" type="image/webp">
+											<source srcset="images/team/team-2.jpg 1x, images/team/team-2@2x.jpg 1.3x" type="image/jpg">
+											<img src="images/team/team-2.jpg" width="460" height="299" alt="">
+										</picture>
+									</div>
+									<div class="team-card__wrap">
+										<div class="team-card__name">
+											Мария сафонова
+										</div>
+										<div class="team-card__job">
+											Брокер по новостройкам
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-slide">
+								<div class="team-card">
+									<div class="team-card__img">
+										<picture>
+											<source srcset="images/team/team-3.webp 1x, images/team/team-3@2x.webp 1.3x" type="image/webp">
+											<source srcset="images/team/team-3.jpg 1x, images/team/team-3@2x.jpg 1.3x" type="image/jpg">
+											<img src="images/team/team-3.jpg" width="460" height="373" alt="">
+										</picture>
+									</div>
+									<div class="team-card__wrap">
+										<div class="team-card__name">
+											Мария сафонова
+										</div>
+										<div class="team-card__job">
+											Брокер по новостройкам
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="reviews" data-slider="reviews-slider">
+				<div class="reviews__wrapper">
+					<div class="reviews__head">
+						<h2 class="section-title reviews__title">
+							Отзывы
+						</h2>
+						<div class="reviews__wrap">
+							<a href="https://yandex.ru/maps/org/domvizor/12617624875/reviews/?ll=30.332515%2C60.047850&z=13" target="_blank" class="b-btn b-btn--primary">
+								<span>Все отзывы</span>
+							</a>
+							<div class="swiper-nav">
+								<div class="reviews-prev swiper-button swiper-button-prev">
+									<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<rect x="0.5" y="0.500008" width="47" height="47" stroke="#434343" />
+										<path d="M31 24L17 24" stroke="white" stroke-linecap="round" />
+										<path d="M23 18L17 24L23 30" stroke="white" stroke-linecap="round" />
+									</svg>
+								</div>
+								<div class="reviews-next swiper-button swiper-button-next">
+									<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<rect x="47.5" y="47.5" width="47" height="47" transform="rotate(-180 47.5 47.5)" stroke="#434343" />
+										<path d="M17 24L31 24" stroke="white" stroke-linecap="round" />
+										<path d="M25 30L31 24L25 18" stroke="white" stroke-linecap="round" />
+									</svg>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="reviews__main">
+						<div class="swiper swiper--reviews">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="reviews-item">
+										<div class="reviews-item__top">
+											<div class="reviews-item__img">
+												<picture>
+													<source srcset="images/reviews/avatar.webp 1x, images/reviews/avatar@2x.webp 1.3x" type="image/webp">
+													<source srcset="images/reviews/avatar.jpg 1x, images/reviews/avatar@2x.jpg 1.3x" type="image/jpg">
+													<img src="images/reviews/avatar.jpg" width="64" height="64" alt="">
+												</picture>
+											</div>
+											<div class="reviews-item__name">
+												иВАН ВАСИЛЬЕВ
+											</div>
+										</div>
+										<div class="reviews-item__text">
+											<p>
+												Lorem ipsum dolor sit amet consectetur. Scelerisque sapien ullamcorper nec quam cras
+												molestie leo. Tortor porta nisi purus ullamcorper lacus arcu gravida ut cursus. Vel
+												viverra pellentesque congue libero scelerisque. Non lobortis magna et quam. Non eu
+												mi tristique ornare posuere erat platea quisque nisi. Egestas pellentesque venenatis
+												mi montes nam id eleifend. Condimentum convallis nisl sit mauris eget cursus nullam
+												dui. Amet ut turpis neque facilisis blandit turpis. A blandit suspendisse ipsum at
+												semper ut. Fusce aliquet dictum neque in. Odio purus ipsum faucibus mauris urna
+												purus in leo.
+												mi montes nam id eleifend. Condimentum convallis nisl sit mauris eget cursus nullam
+												dui. Amet ut turpis neque facilisis blandit turpis. A blandit suspendisse ipsum at
+												semper ut. Fusce aliquet dictum neque in. Odio purus ipsum faucibus mauris urna
+												purus in leo.
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="reviews-item">
+										<div class="reviews-item__top">
+											<div class="reviews-item__img">
+												<picture>
+													<source srcset="images/reviews/avatar.webp 1x, images/reviews/avatar@2x.webp 1.3x" type="image/webp">
+													<source srcset="images/reviews/avatar.jpg 1x, images/reviews/avatar@2x.jpg 1.3x" type="image/jpg">
+													<img src="images/reviews/avatar.jpg" width="64" height="64" alt="">
+												</picture>
+											</div>
+											<div class="reviews-item__name">
+												иВАН ВАСИЛЬЕВ
+											</div>
+										</div>
+										<div class="reviews-item__text">
+											<p>
+												Lorem ipsum dolor sit amet consectetur. Scelerisque sapien ullamcorper nec quam cras
+												molestie leo. Tortor porta nisi purus ullamcorper lacus arcu gravida ut cursus. Vel
+												viverra pellentesque congue libero scelerisque. Non lobortis magna et quam. Non eu
+												mi tristique ornare posuere erat platea quisque nisi. Egestas pellentesque venenatis
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="reviews-item">
+										<div class="reviews-item__top">
+											<div class="reviews-item__img">
+												<picture>
+													<source srcset="images/reviews/avatar.webp 1x, images/reviews/avatar@2x.webp 1.3x" type="image/webp">
+													<source srcset="images/reviews/avatar.jpg 1x, images/reviews/avatar@2x.jpg 1.3x" type="image/jpg">
+													<img src="images/reviews/avatar.jpg" width="64" height="64" alt="">
+												</picture>
+											</div>
+											<div class="reviews-item__name">
+												иВАН ВАСИЛЬЕВ
+											</div>
+										</div>
+										<div class="reviews-item__text">
+											<p>
+												Lorem ipsum dolor sit amet consectetur. Scelerisque sapien ullamcorper nec quam cras
+												molestie leo. Tortor porta nisi purus ullamcorper lacus arcu gravida ut cursus. Vel
+												viverra pellentesque congue libero scelerisque. Non lobortis magna et quam. Non eu
+												mi tristique ornare posuere erat platea quisque nisi. Egestas pellentesque venenatis
+												mi montes nam id eleifend. Condimentum convallis nisl sit mauris eget cursus nullam
+												dui. Amet ut turpis neque facilisis blandit turpis. A blandit suspendisse ipsum at
+												semper ut. Fusce aliquet dictum neque in. Odio purus ipsum faucibus mauris urna
+												purus in leo.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="contacts">
+				<div class="contacts__wrapper">
+					<div class="contacts__left">
+						<h2 class="section-title contacts__title">
+							Бесплатная консультация
+						</h2>
+						<div class="contacts__text">
+							<p>
+								Проанализируем ваш запрос, подробно распишем структуру подготовки сделки и расскажем о каждом этапе
+								работы с нами.
+							</p>
+						</div>
+						<div class="contacts__socials">
+							<p>Или свяжитесь с нами в соцсетях</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+							<div class="s-block">
+								<a href="https://api.whatsapp.com/send?phone=78123335515" class="s-block__link" target="_blank" rel="noopener nofollow">
+									<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<circle opacity="0.2" cx="16" cy="16" r="16" fill="white" />
+										<path d="M16.0007 9.33325C19.6827 9.33325 22.6673 12.3179 22.6673 15.9999C22.6673 19.6819 19.6827 22.6666 16.0007 22.6666C14.8225 22.6685 13.6651 22.3567 12.6473 21.7633L9.33666 22.6666L10.238 19.3546C9.64406 18.3365 9.33203 17.1786 9.33399 15.9999C9.33399 12.3179 12.3187 9.33325 16.0007 9.33325ZM13.7287 12.8666L13.5953 12.8719C13.509 12.8772 13.4246 12.8999 13.3473 12.9386C13.275 12.9795 13.209 13.0307 13.1513 13.0906C13.0713 13.1659 13.026 13.2313 12.9773 13.2946C12.7307 13.6152 12.598 14.0088 12.6 14.4133C12.6013 14.7399 12.6867 15.0579 12.82 15.3553C13.0927 15.9566 13.5413 16.5933 14.1333 17.1833C14.276 17.3253 14.416 17.4679 14.5667 17.6006C15.3023 18.2482 16.1788 18.7153 17.1267 18.9646L17.5053 19.0226C17.6287 19.0293 17.752 19.0199 17.876 19.0139C18.0702 19.0039 18.2597 18.9513 18.4313 18.8599C18.5186 18.8149 18.6038 18.766 18.6867 18.7133C18.6867 18.7133 18.7153 18.6946 18.77 18.6533C18.86 18.5866 18.9153 18.5393 18.99 18.4613C19.0453 18.4039 19.0933 18.3366 19.13 18.2599C19.182 18.1513 19.234 17.9439 19.2553 17.7713C19.2713 17.6393 19.2667 17.5673 19.2647 17.5226C19.262 17.4513 19.2027 17.3773 19.138 17.3459L18.75 17.1719C18.75 17.1719 18.17 16.9193 17.8153 16.7579C17.7782 16.7417 17.7384 16.7324 17.698 16.7306C17.6524 16.7259 17.6063 16.731 17.5628 16.7456C17.5194 16.7602 17.4795 16.784 17.446 16.8153C17.4427 16.8139 17.398 16.8519 16.916 17.4359C16.8883 17.4731 16.8502 17.5012 16.8065 17.5166C16.7628 17.5321 16.7155 17.5341 16.6707 17.5226C16.6272 17.5109 16.5847 17.4962 16.5433 17.4786C16.4607 17.4439 16.432 17.4306 16.3753 17.4066C15.9927 17.2396 15.6385 17.014 15.3253 16.7379C15.2413 16.6646 15.1633 16.5846 15.0833 16.5073C14.8211 16.2561 14.5925 15.9719 14.4033 15.6619L14.364 15.5986C14.3357 15.556 14.3129 15.5101 14.296 15.4619C14.2707 15.3639 14.3367 15.2853 14.3367 15.2853C14.3367 15.2853 14.4987 15.1079 14.574 15.0119C14.6473 14.9186 14.7093 14.8279 14.7493 14.7633C14.828 14.6366 14.8527 14.5066 14.8113 14.4059C14.6247 13.9499 14.4313 13.4959 14.2327 13.0453C14.1933 12.9559 14.0767 12.8919 13.9707 12.8793C13.9347 12.8753 13.8987 12.8713 13.8627 12.8686C13.7731 12.8641 13.6834 12.865 13.594 12.8713L13.728 12.8659L13.7287 12.8666Z" fill="white" />
+									</svg>
+								</a>
+								<a href="https://t.me/dom_vizor" class="s-block__link" target="_blank" rel="noopener nofollow">
+									<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<circle opacity="0.2" cx="16" cy="16" r="16" fill="white" />
+										<g>
+											<path fill-rule="evenodd" clip-rule="evenodd" d="M21.1846 10.9533C21.3493 10.884 21.5297 10.8601 21.7068 10.8841C21.8839 10.9081 22.0514 10.9791 22.1917 11.0898C22.3321 11.2004 22.4402 11.3467 22.5048 11.5134C22.5695 11.68 22.5883 11.8609 22.5593 12.0373L21.0473 21.2086C20.9006 22.0933 19.9299 22.6006 19.1186 22.16C18.4399 21.7913 17.4319 21.2233 16.5253 20.6306C16.0719 20.334 14.6833 19.384 14.8539 18.708C15.0006 18.13 17.3339 15.958 18.6673 14.6666C19.1906 14.1593 18.9519 13.8666 18.3339 14.3333C16.7986 15.492 14.3353 17.254 13.5206 17.75C12.8019 18.1873 12.4273 18.262 11.9793 18.1873C11.1619 18.0513 10.4039 17.8406 9.78527 17.584C8.94927 17.2373 8.98993 16.088 9.7846 15.7533L21.1846 10.9533Z" fill="white" />
+										</g>
+										<defs>
+											<clipPath>
+												<rect width="16" height="16" fill="white" transform="translate(8 8)" />
+											</clipPath>
+										</defs>
+									</svg>
+								</a>
+								<a href="https://vk.com/domvizor" class="s-block__link" target="_blank" rel="noopener nofollow">
+									<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<circle opacity="0.2" cx="16" cy="16" r="16" fill="white" />
+										<path d="M23.9192 21.3175H22.0183C21.2992 21.3175 21.0825 20.735 19.7933 19.445C18.6667 18.3591 18.1908 18.2241 17.9058 18.2241C17.5117 18.2241 17.4042 18.3325 17.4042 18.875V20.585C17.4042 21.0475 17.2542 21.3183 16.0458 21.3183C14.8736 21.2395 13.7368 20.8834 12.7291 20.2792C11.7215 19.6751 10.8718 18.8402 10.25 17.8433C8.77366 16.0058 7.74642 13.8492 7.25 11.545C7.25 11.26 7.35833 11.0016 7.90167 11.0016H9.80167C10.29 11.0016 10.4658 11.2191 10.6575 11.7216C11.58 14.4366 13.1542 16.7983 13.7933 16.7983C14.0383 16.7983 14.145 16.69 14.145 16.0791V13.2825C14.0642 12.0066 13.3867 11.8991 13.3867 11.4375C13.3952 11.3157 13.451 11.202 13.542 11.1206C13.633 11.0392 13.7522 10.9965 13.8742 11.0016H16.8608C17.2692 11.0016 17.4042 11.205 17.4042 11.6933V15.4683C17.4042 15.8758 17.5792 16.0108 17.7025 16.0108C17.9475 16.0108 18.1358 15.8758 18.585 15.4275C19.5478 14.2533 20.3344 12.9451 20.92 11.5441C20.9799 11.3759 21.0933 11.2319 21.2427 11.1341C21.3921 11.0363 21.5694 10.9901 21.7475 11.0025H23.6483C24.2183 11.0025 24.3392 11.2875 24.2183 11.6941C23.527 13.2428 22.6715 14.7129 21.6667 16.0791C21.4617 16.3916 21.38 16.5541 21.6667 16.9208C21.855 17.2058 22.5217 17.7625 22.9692 18.2916C23.6208 18.9416 24.1617 19.6933 24.5708 20.5166C24.7342 21.0466 24.4617 21.3175 23.9192 21.3175Z" fill="white" />
+									</svg>
+								</a>
+								<a href="https://ok.ru/domvizor" class="s-block__link" target="_blank" rel="noopener nofollow">
+									<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<circle opacity="0.2" cx="16" cy="16" r="16" fill="white" />
+										<g clip-path="url(#clip0_18_715)">
+											<path d="M15.7063 8C13.3937 8 11.5124 9.85234 11.5124 12.1295C11.5124 14.4065 13.3937 16.258 15.7063 16.258C18.0188 16.258 19.8992 14.4065 19.8992 12.1295C19.8992 9.85234 18.0189 8 15.7063 8ZM15.7063 10.4195C16.6634 10.4195 17.4418 11.187 17.4418 12.1295C17.4418 13.0716 16.6635 13.8385 15.7063 13.8385C14.749 13.8385 13.9699 13.0716 13.9699 12.1295C13.9699 11.187 14.749 10.4195 15.7063 10.4195ZM12.2486 16.3985C11.8337 16.3921 11.4257 16.5936 11.189 16.965C10.8273 17.5309 11.0006 18.2776 11.5739 18.6335C12.3322 19.102 13.1551 19.4344 14.0085 19.626L11.6648 21.935C11.185 22.4077 11.1854 23.1733 11.6653 23.646C11.9058 23.8819 12.2195 24 12.534 24C12.8482 24 13.1629 23.8817 13.4027 23.6455L15.7053 21.377L18.0099 23.6455C18.4893 24.1181 19.2667 24.1181 19.7469 23.6455C20.2269 23.1731 20.2269 22.4067 19.7469 21.935L17.4022 19.6265C18.2558 19.4349 19.0789 19.1023 19.8368 18.6335C20.4112 18.2776 20.5847 17.5301 20.2231 16.965C19.8611 16.399 19.1032 16.2285 18.5283 16.585C16.8114 17.6485 14.5992 17.6478 12.8828 16.585C12.6852 16.4625 12.466 16.4018 12.2486 16.3985Z" fill="white" />
+										</g>
+										<defs>
+											<clipPath id="clip0_18_715">
+												<rect width="9.41177" height="16" fill="white" transform="translate(11 8)" />
+											</clipPath>
+										</defs>
+									</svg>
+								</a>
+								<a href="https://www.avito.ru/brands/i180106755/all/nedvizhimost?sellerId=8a2cc685840c609d25088e586f901785" class="s-block__link" target="_blank" rel="noopener nofollow">
+									<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<circle opacity="0.2" cx="16" cy="16" r="16" fill="white" />
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M15.3566 12.0919C15.3566 12.9162 15.0292 13.7067 14.4463 14.2896C13.8635 14.8724 13.0729 15.1999 12.2486 15.1999C11.4243 15.1999 10.6338 14.8724 10.0509 14.2896C9.46807 13.7067 9.14062 12.9162 9.14062 12.0919C9.14062 11.2676 9.46807 10.4771 10.0509 9.8942C10.6338 9.31134 11.4243 8.98389 12.2486 8.98389C13.0729 8.98389 13.8635 9.31134 14.4463 9.8942C15.0292 10.4771 15.3566 11.2676 15.3566 12.0919ZM19.3576 14.5269C20.0033 14.5269 20.6225 14.2704 21.0791 13.8138C21.5356 13.3573 21.7921 12.7381 21.7921 12.0924C21.7921 11.4467 21.5356 10.8275 21.0791 10.3709C20.6225 9.91438 20.0033 9.65789 19.3576 9.65789C18.712 9.65789 18.0927 9.91438 17.6362 10.3709C17.1796 10.8275 16.9231 11.4467 16.9231 12.0924C16.9231 12.7381 17.1796 13.3573 17.6362 13.8138C18.0927 14.2704 18.712 14.5269 19.3576 14.5269ZM23.1406 19.2019C23.1406 20.2051 22.7421 21.1672 22.0328 21.8765C21.3234 22.5859 20.3613 22.9844 19.3581 22.9844C18.3549 22.9844 17.3928 22.5859 16.6835 21.8765C15.9741 21.1672 15.5756 20.2051 15.5756 19.2019C15.5756 18.1987 15.9741 17.2366 16.6835 16.5273C17.3928 15.8179 18.3549 15.4194 19.3581 15.4194C20.3613 15.4194 21.3234 15.8179 22.0328 16.5273C22.7421 17.2366 23.1406 18.1987 23.1406 19.2019ZM14.0086 19.2019C14.0086 19.6687 13.8232 20.1163 13.4931 20.4464C13.1631 20.7765 12.7154 20.9619 12.2486 20.9619C11.7818 20.9619 11.3342 20.7765 11.0041 20.4464C10.6741 20.1163 10.4886 19.6687 10.4886 19.2019C10.4886 18.7351 10.6741 18.2874 11.0041 17.9574C11.3342 17.6273 11.7818 17.4419 12.2486 17.4419C12.7154 17.4419 13.1631 17.6273 13.4931 17.9574C13.8232 18.2874 14.0086 18.7351 14.0086 19.2019Z" fill="white" />
+									</svg>
+								</a>
+								<a href="https://www.cian.ru/company/50629765/" class="s-block__link" target="_blank" rel="noopener nofollow">
+									<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<circle opacity="0.2" cx="16" cy="16" r="16" fill="white" />
+										<path fill-rule="evenodd" clip-rule="evenodd" d="M18.3566 11.9398C17.6868 11.9398 17.1443 11.3847 17.1443 10.6996C17.1443 10.0145 17.6868 9.45894 18.3566 9.45894C19.0256 9.45894 19.5685 10.0145 19.5685 10.6996C19.5685 11.3847 19.026 11.9398 18.3566 11.9398ZM18.3566 8.00044C16.8962 8.00044 15.7124 9.21124 15.7124 10.7058C15.7113 11.2951 15.8998 11.8687 16.2493 12.3395L16.4251 12.5885L18.3562 14.9719L20.4635 12.339C20.8128 11.8681 21.0011 11.2946 21 10.7053C21 9.21124 19.8162 8 18.3562 8L18.3566 8.00044ZM19.3655 20.5696V16.0299H17.4071V18.1621L15.45 15.7558L10 22.4559L11.8129 24L15.45 19.5292L19.0871 24L20.8995 22.4559L19.3655 20.5696Z" fill="white" />
+									</svg>
+
+								</a>
+							</div>
+						</div>
+						<div class="contacts__partners">
+							<a class="partner" href=https://realty.ya.ru/sankt-peterburg_i_leningradskaya_oblast/agentstva/domvizor-1061044214/ target="_blank">
+								<img src="
+					   data:image/svg+xml,
+					    %3Csvg width='226' height='64' fill='none' xmlns='http://www.w3.org/2000/svg'%3E
+					    %3Cpath d='M0 14.08C0 6.304 6.318 0 14.111 0h197.556c7.793 0 14.111 6.304 14.111 14.08v35.84c0 7.776-6.318 14.08-14.111 14.08H14.111C6.318 64 0 57.696 0 49.92V14.08Z' fill='rgba(0, 0, 0, 0.12)' /%3E
+					    %3Cpath d='M1.283 14.08c0-7.07 5.743-12.8 12.828-12.8h197.556c7.084 0 12.828 5.73 12.828 12.8v35.84c0 7.07-5.744 12.8-12.828 12.8H14.111c-7.085 0-12.828-5.73-12.828-12.8V14.08Z' fill='%23fff'/%3E
+					    %3Cpath d='M44.603 11.024h7.9v10.074h-1.718V12.5h-4.478v8.6h-1.704V11.023ZM59.118 19.82a2.446 2.446 0 0 1-.31.506 2.177 2.177 0 0 1-.464.463 2.321 2.321 0 0 1-.648.323c-.253.085-.55.127-.887.127-.32 0-.615-.047-.887-.14a1.986 1.986 0 0 1-.718-.394 2.03 2.03 0 0 1-.479-.66 2.402 2.402 0 0 1-.169-.928c0-.796.296-1.39.887-1.784.592-.403 1.427-.604 2.507-.604h1.112v-.45c0-.478-.122-.806-.366-.983-.244-.188-.648-.281-1.211-.281-.479 0-.93.07-1.352.21-.413.131-.779.286-1.098.464v-1.363c.29-.16.676-.31 1.155-.45.478-.14 1-.21 1.562-.21.939 0 1.662.196 2.169.59.516.384.774 1.002.774 1.854v4.103c.01.103.014.21.014.323l.028.323c.01.094.02.174.029.24h-1.507a6.445 6.445 0 0 1-.085-.549 21.677 21.677 0 0 1-.042-.632l-.014-.098Zm-1.858.154c.347 0 .633-.07.858-.21.235-.15.423-.319.564-.506.14-.197.239-.389.295-.576.057-.188.085-.319.085-.394v-.491h-1.014c-.648 0-1.122.102-1.422.309a.949.949 0 0 0-.45.843c0 .318.089.571.267.758.188.178.46.267.817.267ZM66.906 21.239c-.554 0-1.032-.122-1.436-.366a2.916 2.916 0 0 1-.957-1.011v3.723h-1.634v-9.779h1.493l.112 1.293c.245-.44.568-.787.972-1.04.404-.262.896-.393 1.478-.393.432 0 .84.08 1.225.239.395.15.737.384 1.028.702.291.31.521.703.69 1.18.178.469.268 1.021.268 1.658 0 .646-.09 1.209-.268 1.686a3.35 3.35 0 0 1-.704 1.18c-.29.31-.633.544-1.028.703-.394.15-.807.225-1.239.225Zm-.394-1.363c.582 0 1.051-.197 1.408-.59.366-.403.55-1.017.55-1.84 0-.816-.184-1.425-.55-1.827-.357-.403-.821-.604-1.394-.604-.29 0-.558.051-.802.154a1.69 1.69 0 0 0-.648.45c-.178.206-.32.463-.423.772a3.24 3.24 0 0 0-.154 1.054c0 .412.051.773.154 1.082.104.3.244.553.423.759.178.197.39.346.633.45.254.093.521.14.803.14ZM75.08 15.127v5.971h-1.634v-5.971h-2.21v-1.32h6.096v1.32H75.08ZM83.717 18.021h-3.083v3.077H79v-7.292h1.634v2.895h3.083v-2.895h1.633v7.292h-1.633v-3.077ZM92.138 12.64a.917.917 0 0 1-.944-.927.917.917 0 0 1 .943-.927c.273 0 .498.088.677.266a.896.896 0 0 1 .267.66c0 .254-.089.474-.267.661a.917.917 0 0 1-.676.267Zm-2.873 0a.9.9 0 0 1-.661-.267.927.927 0 0 1-.268-.66c0-.263.09-.483.268-.66a.9.9 0 0 1 .662-.268c.272 0 .497.09.675.267a.873.873 0 0 1 .282.66.903.903 0 0 1-.282.661.917.917 0 0 1-.675.267Zm4.45 7.924c-.103.066-.23.14-.38.225-.15.075-.329.145-.535.211a5.43 5.43 0 0 1-1.648.239c-1.342 0-2.347-.333-3.013-.998-.657-.665-.986-1.597-.986-2.796 0-.59.09-1.12.268-1.588.178-.468.427-.861.746-1.18.32-.328.7-.576 1.14-.744a3.841 3.841 0 0 1 1.451-.267c.544 0 1.032.089 1.464.267.442.178.803.444 1.085.8.281.356.474.797.577 1.321.112.525.117 1.138.014 1.84h-5.055c.066.666.286 1.167.662 1.504.375.328.962.492 1.76.492.582 0 1.065-.07 1.45-.21.394-.15.728-.305 1-.464v1.348Zm-2.957-5.606c-.479 0-.882.146-1.21.436-.33.29-.545.721-.649 1.292h3.436c.019-.59-.113-1.025-.394-1.306-.282-.281-.676-.422-1.183-.422ZM99.863 21.239c-.553 0-1.032-.122-1.436-.366a2.916 2.916 0 0 1-.957-1.011v3.723h-1.633v-9.779h1.492l.113 1.293c.244-.44.568-.787.971-1.04.404-.262.897-.393 1.478-.393.432 0 .841.08 1.225.239.395.15.737.384 1.028.702.291.31.521.703.69 1.18.179.469.268 1.021.268 1.658 0 .646-.089 1.209-.268 1.686a3.343 3.343 0 0 1-.704 1.18c-.291.31-.633.544-1.028.703-.394.15-.807.225-1.239.225Zm-.394-1.363c.582 0 1.051-.197 1.408-.59.366-.403.549-1.017.549-1.84 0-.816-.183-1.425-.549-1.827-.357-.403-.821-.604-1.394-.604-.29 0-.558.051-.802.154a1.69 1.69 0 0 0-.648.45c-.178.206-.32.463-.422.772a3.24 3.24 0 0 0-.155 1.054c0 .412.051.773.154 1.082.104.3.245.553.423.759.178.197.39.346.633.45.254.093.522.14.803.14Z' fill='%23000'/%3E
+					    %3Ccircle cx='24.32' cy='39.68' fill='%23F33' r='12.8'/%3E
+					    %3Cpath d='M26.233 34.048h-1.298c-2.225 0-3.337 1.11-3.337 2.776 0 1.85.742 2.776 2.41 3.886l1.298.926-3.708 5.737H18.63l3.523-5.182c-2.04-1.48-3.152-2.776-3.152-5.182 0-2.96 2.04-4.996 5.933-4.996h3.894v15.36h-2.596V34.048Z' fill='%23fff'/%3E
+					    %3Cpath d='M44.634 30.005V49.28h3.362v-8.375h6.28v8.375h3.362V30.005h-3.362v8.293h-6.28v-8.293h-3.362ZM71.123 48.337v-2.69c-1.028.693-2.75 1.303-4.362 1.303-2.417 0-3.334-1.137-3.473-3.466h7.974v-1.747c0-4.854-2.14-6.684-5.445-6.684-4.03 0-5.946 3.078-5.946 7.294 0 4.853 2.389 7.21 6.612 7.21 2.112 0 3.668-.554 4.64-1.22ZM65.761 37.66c1.64 0 2.14 1.359 2.14 3.106v.277h-4.613c.083-2.218.89-3.383 2.473-3.383ZM85.786 46.673h-1.473V35.33h-9.641v1.193c0 3.41-.223 7.82-1.39 10.15h-1.028v5.796h3.057V49.28h7.418v3.19h3.057v-5.797Zm-4.78 0H76.34c.917-2.108 1.167-5.907 1.167-8.32v-.416h3.5v8.736ZM93.034 49.28c3.279 0 5.224-1.387 5.224-4.049 0-1.83-1.111-2.884-2.973-3.217 1.5-.416 2.445-1.47 2.445-3.134 0-2.385-1.584-3.55-4.64-3.55h-5.557v13.95h5.501Zm-.416-11.454c1.194 0 1.861.5 1.861 1.553 0 .97-.722 1.553-1.973 1.553H90.84v-3.106h1.779Zm.055 5.52c1.417 0 2.167.498 2.167 1.663 0 1.276-.833 1.775-2.167 1.775H90.84v-3.439h1.834ZM100.476 35.33v13.95h2.862l5.112-8.625v8.625h3.223V35.33h-2.862l-5.112 8.625V35.33h-3.223ZM116.839 49.28l4.39-6.85v6.85h3.307v-6.85l4.39 6.85h3.751l-4.863-7.543 4.224-6.407h-3.335l-4.167 6.434V35.33h-3.307v6.434l-4.168-6.434h-3.417l4.307 6.545-4.752 7.405h3.64ZM133.932 35.33v13.95h2.862l5.112-8.625v8.625h3.223V35.33h-2.862l-5.112 8.625V35.33h-3.223ZM159.825 49.28h3.224l-.056-13.95h-4.529l-3.029 9.29-2.723-9.29h-4.806v13.95h2.806V38.852l3.029 10.428h2.695l3.389-10.428V49.28ZM171.427 35.053c-3.64 0-6.169 2.579-6.169 7.266 0 4.66 2.529 7.238 6.169 7.238 3.639 0 6.168-2.579 6.168-7.266 0-4.659-2.529-7.238-6.168-7.238Zm0 11.897c-1.834 0-2.751-1.414-2.751-4.631 0-3.245.917-4.66 2.751-4.66 1.833 0 2.75 1.415 2.75 4.632 0 3.245-.917 4.66-2.75 4.66ZM185.817 49.557c1.528 0 2.611-.277 3.417-.86v-2.69c-.833.583-1.834.943-3.223.943-2.362 0-3.334-1.83-3.334-4.714 0-3.023 1.195-4.576 3.362-4.576 1.278 0 2.528.444 3.195.86v-2.802c-.694-.388-1.917-.665-3.556-.665-4.224 0-6.419 3.023-6.419 7.266 0 4.66 2.14 7.238 6.558 7.238ZM201.573 37.937V35.33h-11.087v2.607h3.89V49.28h3.307V37.937h3.89ZM203.53 35.33v13.95h4.974c3.278 0 5.612-1.664 5.612-4.937 0-3.106-2.084-4.742-5.557-4.742h-1.723v-4.27h-3.306Zm4.779 11.343h-1.473v-4.465h1.556c1.445 0 2.307.638 2.307 2.246 0 1.609-.945 2.22-2.39 2.22Z' fill='%23000'/%3E
+					    %3C/svg%3E
+					    " />
+							</a>
+						</div>
+					</div>
+					<div class="contacts__img">
+						<picture>
+							<source media="(min-width: 1080px)" srcset="images/contacts/contacts-sm.webp 1x, images/contacts/contacts-sm@2x.webp 1.3x" type="image/webp">
+							<source media="(min-width: 1080px)" srcset="images/contacts/contacts-sm.jpg 1x, images/contacts/contacts-sm@2x.jpg 1.3x" type="image/jpg">
+							<source media="(min-width: 743px)" srcset="images/contacts/contacts-big.webp 1x, images/contacts/contacts-big@2x.webp 1.3x" type="image/webp">
+							<source media="(min-width: 743px)" srcset="images/contacts/contacts-big.jpg 1x, images/contacts/contacts-big@2x.jpg 1.3x" type="image/jpg">
+							<source srcset="images/contacts/contacts-sm.webp 1x, images/contacts/contacts-sm@2x.webp 1.3x" type="image/webp">
+							<source srcset="images/contacts/contacts-sm.jpg 1x, images/contacts/contacts-sm@2x.jpg 1.3x" type="image/jpg">
+							<img src="images/contacts/contacts-sm.jpg" alt="">
+						</picture>
+					</div>
+					<div class="contacts__form">
+						<form class="form form--contacts" data-form-validation="wrapper" data-request="contactsForm::onFormSubmit" novalidate="novalidate">
+							<div class="form__wrapper">
+								<div class="form__row">
+									<label for="name" class="form__label">
+										<input type="text" id="name" name="name" class="form__input" placeholder="Ваше имя" aria-label="Ваше имя" data-form-validation="required" data-form-validation-rules="[
+						{
+							&quot;rule&quot;         : &quot;required&quot;,
+							&quot;errorMessage&quot; : &quot;Пожалуйста, введите ваше имя&quot;
+						}
+					]" required="">
+									</label>
+									<div class="form__error"></div>
+
+								</div>
+								<div class="form__row">
+									<label for="phone" class="form__label">
+										<input type="tel" id="phone" name="phone" class="form__input form__input--phone" placeholder="+7 (999) 999-99-99" aria-label="Телефон" data-form-validation="required" data-form-validation-rules="[
+						{
+							&quot;rule&quot;         : &quot;required&quot;,
+							&quot;errorMessage&quot; : &quot;Пожалуйста, введите свой телефон&quot;
+						}
+					]" required="">
+									</label>
+								</div>
+								<div class="form__row">
+									<label for="form-message">
+										<textarea class="form__area" name="form-message" id="form-message" cols="30" rows="4" placeholder="Сообщение"></textarea>
+									</label>
+								</div>
+							</div>
+							<button type="submit" class="b-btn b-btn--primary">
+								<span>Получить консультацию</span>
+							</button>
+							<input name="_token" type="hidden" value="DdekATLXNotxBTChvMTmZpkYyJgpxNqMKHBv8pPT" data-just-validate-fallback-disabled="false" style="">
+						</form>
+					</div>
+				</div>
+				<div class="contacts__grid">
+					<div class="contacts__item">
+						<div class="contacts__name">
+							Телефон
+						</div>
+						<a href="tel:+78767654545">+7 (876) 765-45-45</a>
+					</div>
+					<div class="contacts__item">
+						<div class="contacts__name">
+							Email
+						</div>
+						<a href="mailto:fish.mail@mail.com">fish.mail@mail.com</a>
+					</div>
+					<div class="contacts__item">
+						<div class="contacts__name">
+							Мы на картах
+						</div>
+						<div class="contacts__address">
+
+							<div class="s-block">
+								<a href="https://yandex.ru/maps/org/domvizor/12617624875/?ll=30.332515%2C60.047850&z=13" class="s-block__link" target="_blank">
+									<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<circle opacity="0.2" cx="16" cy="16" r="16" fill="white" />
+										<path d="M16 9C12.6862 9 10 11.6862 10 15C10 16.6563 10.6711 18.156 11.7565 19.2417C12.8422 20.328 15.4 21.9 15.55 23.55C15.5725 23.7974 15.7516 24 16 24C16.2484 24 16.4275 23.7974 16.45 23.55C16.6 21.9 19.1578 20.328 20.2435 19.2417C21.3289 18.156 22 16.6563 22 15C22 11.6862 19.3138 9 16 9Z" fill="white" />
+										<path d="M15.9999 17.1004C17.1597 17.1004 18.0999 16.1602 18.0999 15.0004C18.0999 13.8406 17.1597 12.9004 15.9999 12.9004C14.8401 12.9004 13.8999 13.8406 13.8999 15.0004C13.8999 16.1602 14.8401 17.1004 15.9999 17.1004Z" fill="#434343" />
+									</svg>
+								</a>
+								<a href="https://go.2gis.com/hbjf6" class="s-block__link" target="_blank">
+									<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<circle opacity="0.2" cx="16" cy="16" r="16" fill="white" />
+										<path d="M19.4602 17.5208C16.6737 17.535 16.2229 19.275 16.0727 20.7463L16.0044 21.397H15.4443L15.3761 20.7463C15.2258 19.275 14.7614 17.535 12.0705 17.5208C11.6197 16.5588 11.4285 15.7807 11.4285 14.9036C11.4285 12.7109 13.1633 10.6596 15.7312 10.6596C18.2992 10.6596 20.0066 12.6967 20.0066 14.9179C20.0066 15.7807 19.9246 16.5588 19.4602 17.5208ZM15.7039 8C11.4695 8 8 11.5933 8 15.9929C8 20.4067 11.4695 24 15.7039 24C19.9792 24 23.4351 20.4067 23.4351 15.9929C23.4351 11.5933 19.9792 8 15.7039 8Z" fill="white" />
+									</svg>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Footer -->
+			<footer class="footer" id="footer">
+				<div class="footer__wrapper">
+					<div class="footer__item">
+						<div class="footer__copyright">
+							©DOMVIZOR
+						</div>
+					</div>
+					<div class="footer__item">
+						<a target="_blank" href="#">Политика конфиденциальности</a>
+					</div>
+					<div class="footer__item">
+						<a target="_blank" href="https://rhino-digital.com/">Сделано в Rhino</a>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</div>
+
+	<div id="modalForm" class="modal" aria-hidden="true">
+		<div tabindex="-1" class="modal__overlay" data-micromodal-close>
+			<div role="dialog" class="modal__container" data-modal-close="modalForm">
+				<button type="button" class="modal__close" data-modal-close="modalForm">
+					<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+						<path d="M18.5297 17.47C18.8227 17.763 18.8227 18.238 18.5297 18.531C18.3837 18.677 18.1917 18.751 17.9997 18.751C17.8077 18.751 17.6158 18.678 17.4698 18.531L11.9997 13.061L6.52975 18.531C6.38375 18.677 6.19175 18.751 5.99975 18.751C5.80775 18.751 5.61575 18.678 5.46975 18.531C5.17675 18.238 5.17675 17.763 5.46975 17.47L10.9398 12L5.46975 6.53005C5.17675 6.23705 5.17675 5.76202 5.46975 5.46902C5.76275 5.17602 6.23775 5.17602 6.53075 5.46902L12.0008 10.939L17.4707 5.46902C17.7637 5.17602 18.2387 5.17602 18.5317 5.46902C18.8247 5.76202 18.8247 6.23705 18.5317 6.53005L13.0617 12L18.5297 17.47Z" fill="white" />
+					</svg>
+				</button>
+				<div class="popup__wrap">
+					<div class="feedback">
+						<div class="feedback__img">
+							<picture>
+								<source srcset="images/icon/modal-bg.webp 1x, images/icon/modal-bg@2x.webp 1.3x" type="image/webp">
+								<source srcset="images/icon/modal-bg.jpg 1x, images/icon/modal-bg@2x.jpg 1.3x" type="image/jpg">
+								<img src="images/icon/modal-bg.jpg" width="407" height="174" alt="">
+							</picture>
+						</div>
+						<div class="section-title feedback__title">
+							Бесплатная консультация
+						</div>
+						<div class="feedback__form">
+							<form class="form form--modal" data-form-validation="wrapper" data-request="contactsForm::onFormSubmit" novalidate="novalidate">
+								<div class="form__wrapper">
+									<div class="form__row">
+										<label for="modal-name" class="form__label">
+											<input type="text" id="modal-name" name="modal-name" class="form__input" placeholder="Ваше имя" aria-label="Ваше имя" data-form-validation="required" data-form-validation-rules="[
+						{
+							&quot;rule&quot;         : &quot;required&quot;,
+							&quot;errorMessage&quot; : &quot;Пожалуйста, введите ваше имя&quot;
+						}
+					]" required="">
+										</label>
+										<div class="form__error"></div>
+
+									</div>
+									<div class="form__row">
+										<label for="modal-phone" class="form__label">
+											<input type="tel" id="modal-phone" name="modal-phone" class="form__input form__input--phone" placeholder="+7 (999) 999-99-99" aria-label="Телефон" data-form-validation="required" data-form-validation-rules="[
+						{
+							&quot;rule&quot;         : &quot;required&quot;,
+							&quot;errorMessage&quot; : &quot;Пожалуйста, введите свой телефон&quot;
+						}
+					]" required="">
+										</label>
+									</div>
+									<div class="form__row">
+										<label for="modal-message">
+											<textarea class="form__area" name="modal-message" id="modal-message" cols="30" rows="4" placeholder="Сообщение"></textarea>
+										</label>
+									</div>
+								</div>
+								<button type="submit" class="b-btn b-btn--primary">
+									Получить консультацию
+								</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="modal__bg" aria-hidden="true" data-modal-close="modalForm"></div>
+		</div>
+	</div>
+
+	<script src="js/app.min.js"></script>
+	<script src="js/slider.min.js"></script>
+	<script src="https://res.smartwidgets.ru/app.js" defer></script>
+	<script src="//zoon.ru/jsext/widget_comments.js?v=4.2"></script>
+</body>
+
+</html>
